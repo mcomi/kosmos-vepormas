@@ -1,0 +1,1056 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Static website boilerplate using webpack and bootstrap">
+	<meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1, maximum-scale=1">
+
+	<title>BX+ - Nueva Solicitud</title>
+
+	<!-- Disable tap highlight on IE -->
+	<meta name="msapplication-tap-highlight" content="no">
+
+	<!-- Web Application Manifest -->
+	<link rel="manifest" href="manifest.json">
+
+	<!-- Add to homescreen for Chrome on Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="Static Website Boilerplate">
+	<link rel="icon" sizes="192x192" href="/img/chrome-touch-icon-192x192.png">
+
+	<!-- Add to homescreen for Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Static Website Boilerplate">
+	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.1.1/min/dropzone.min.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="css/style.css">
+
+	<!-- Tile icon for Win8 (144x144 + tile color) -->
+	<meta name="msapplication-TileImage" content="/img/ms-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#263238">
+
+	<!-- Color the status bar on mobile devices -->
+	<meta name="theme-color" content="#263238">
+
+</head>
+
+<body>
+	<div class="mobile-wrapper"></div>
+
+	<nav>
+		<div class="floating-icon">
+			<span class="open-menu">
+				<i class="fa fa-sort-up"></i>
+			</span>
+		</div>
+		<span class="open-menu">
+			<i class="fa fa-sort-up"></i>
+		</span>
+		<div class="sidebar-header">
+			<span class="text-right"><a href="#" id="nav-close">X</a></span>
+			<div class="sidebar-header-logo">
+
+				<img src="img/logo.png" alt="">
+			</div>
+			<div class="sidebar-header-profilepic">
+				<img src="img/profile.jpg" alt="">
+			</div>
+			<p>Hola Laura</p>
+		</div>
+		<ul class="list-unstyled main-menu">
+
+			<!--Include your navigation here-->
+
+			<li><span class="icon"><img src="img/icons/analitycs.png" alt=""></span><a href="#">Notificaciones </a></li>
+			<li><span class="icon"><img src="img/icons/solicitud.png" alt=""></span><a href="#">Nueva solicitud </a></li>
+			<li><span class="icon"><img src="img/icons/004-smartphone.png" alt=""></span><a href="#">Folio de usuario </a></li>
+			<li><span class="icon"><img src="img/icons/home.svg" alt=""></span><a href="#">Home </a></li>
+			<li><span class="icon"><img src="img/icons/analitycs.svg" alt=""></span><a href="#">Analíticas </a></li>
+			<li><span class="icon"><img src="img/icons/requests.svg" alt=""></span><a href="#">Solicitudes </a></li>
+			<li><span class="icon"><img src="img/icons/verified.svg" alt=""></span><a href="#">Verificaciones </a></li>
+			<li><span class="icon"><img src="img/icons/settings.svg" alt=""></span><a href="#">Configuración </a></li>
+		</ul>
+	</nav>
+
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<!--Include your brand here-->
+
+			<div class="navbar-header">
+
+				<!-- Mobile -->
+				<span id="nav-expander" class="nav-expander fixed">
+	        <img src="img/icons/menu.png" alt="">
+	      </span>
+				<span class="notifications">
+						<img src="img/icons/notification.png" alt="">
+					</span>
+
+			</div>
+			<div class="desktop-nav-links col-md-12">
+				<div class="col-md-8">
+
+					<div class="search">
+
+						<input type="text" class="form-control" placeholder="Buscar">
+					</div>
+
+
+
+
+				</div>
+				<div class="col-md-4">
+					<ul class="nav navbar-nav">
+						<li class="notifications">
+							<img src="img/icons/notification.svg" alt="">
+						</li>
+						<li class="profile">
+							<img src="img/profile.jpg" alt="">
+						</li>
+						<li class="profile-name">Buenas tardes Laura</li>
+					</ul>
+
+				</div>
+			</div>
+
+		</div>
+		<!-- /.container-fluid -->
+	</div>
+	<div class="container">
+		<div class="row">
+
+			<div class="col-xs-12 nav-link">
+
+				<i class="fa fa-arrow-left"></i>Atrás
+			</div>
+		</div>
+
+		<div class="row">
+		<form action="" id="formSolicitud">
+
+			<div class="forma-solicitud">
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingOne">
+							<h4 class="panel-title">
+								<a role="button" data-toggle="collapse" data-parent="#accordion" href="#datos-personales" aria-expanded="true" aria-controls="datos-personales">
+									Datos personales
+									<i class="fa fa-minus"></i>
+								</a>
+							</h4>
+						</div>
+						<div id="datos-personales" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+							<div class="panel-body">
+								<div class="row">
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="nombre">Nombre</label>
+										<input type="text" class="form-control validate" id="nombre" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="apellido_paterno">Apellido Paterno</label>
+										<input type="text" class="form-control validate" id="apellido_paterno" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="apellido_materno">Apellido Materno</label>
+										<input type="text" class="form-control validate" id="apellido_materno" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="celular">Celular</label>
+										<input type="text" class="form-control validate" id="celular" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="correo">Correo</label>
+										<input type="text" class="form-control validate" id="correo" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="rfc">RFC con homoclave</label>
+										<input type="text" class="form-control validate" id="rfc" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="sexo">Sexo</label>
+										<select class="form-control validate" id="sexo" placeholder="">
+											<option value="" selected>...</option>
+											<option value="m">Masculino</option>
+											<option value="f">Femenino</option>
+										</select>
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="fecha_nac">Fecha de nacimiento</label>
+										<input type="text" class="form-control validate" id="fecha_nac" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="estado_nac">Estado de nacimiento</label>
+										<select class="form-control validate" id="estado_nac" placeholder="">
+											<option value="" selected>...</option>
+											<option value="0">Todo México</option>
+											<option value="1">Aguascalientes</option>
+											<option value="2">Baja California</option>
+											<option value="3">Baja California Sur</option>
+											<option value="4">Campeche</option>
+											<option value="5">Coahuila de Zaragoza</option>
+											<option value="6">Colima</option>
+											<option value="7">Chiapas</option>
+											<option value="8">Chihuahua</option>
+											<option value="9">Distrito Federal</option>
+											<option value="10">Durango</option>
+											<option value="11">Guanajuato</option>
+											<option value="12">Guerrero</option>
+											<option value="13">Hidalgo</option>
+											<option value="14">Jalisco</option>
+											<option value="15">México</option>
+											<option value="16">Michoacán de Ocampo</option>
+											<option value="17">Morelos</option>
+											<option value="18">Nayarit</option>
+											<option value="19">Nuevo León</option>
+											<option value="20">Oaxaca</option>
+											<option value="21">Puebla</option>
+											<option value="22">Querétaro</option>
+											<option value="23">Quintana Roo</option>
+											<option value="24">San Luis Potosí</option>
+											<option value="25">Sinaloa</option>
+											<option value="26">Sonora</option>
+											<option value="27">Tabasco</option>
+											<option value="28">Tamaulipas</option>
+											<option value="29">Tlaxcala</option>
+											<option value="30">Veracruz de Ignacio de la Llave</option>
+											<option value="31">Yucatán</option>
+											<option value="32">Zacatecas</option>
+										</select>
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+								</div>
+									<div class="row">
+
+										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+											<label for="nacionalidad">Nacionalidad</label>
+											<select class="form-control validate" id="nacionalidad" placeholder="">
+												<option value="" selected>...</option>
+												<option value="m">Mexicana</option>
+												<option value="e">Extranjera</option>
+											</select>
+											<span class="input-success"></span>
+											<span class="input-error"></span>
+										</div>
+										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+											<label for="curp">CURP</label>
+											<input type="text" class="form-control validate" id="curp" placeholder="">
+											<span class="input-success"></span>
+											<span class="input-error"></span>
+										</div>
+									</div>
+									<div id="loader-phone-message" class="row hidden">
+										<div class="sk-folding-cube">
+										  <div class="sk-cube1 sk-cube"></div>
+										  <div class="sk-cube2 sk-cube"></div>
+										  <div class="sk-cube4 sk-cube"></div>
+										  <div class="sk-cube3 sk-cube"></div>
+
+										</div>
+										<div class="center">
+											<span>Enviando código a celular</span>
+										</div>
+									</div>
+									<div class="row">
+										<div id="phone-message-alert" class="alert alert-info alert-dismissible hidden" role="alert">
+										  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										  <i class="fa fa-info-circle"></i> Hemos enviado un código a tu celular
+										</div>
+									</div>
+
+									<h1 class="title-section">Domicilio</h1>
+
+									<div class="row">
+										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+											<label for="calle">Calle</label>
+											<input type="text" class="form-control validate" id="calle" placeholder="">
+											<span class="input-success"></span>
+											<span class="input-error"></span>
+										</div>
+										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+								      <label for="num_ext">Número exterior</label>
+								      <input type="tel" class="form-control validate" id="num_ext" placeholder="">
+								      <span class="input-success"></span>
+								      <span class="input-error"></span>
+								    </div>
+										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+								      <label for="num_int">Número interios</label>
+								      <input type="tel" class="form-control validate" id="num_int" placeholder="">
+								      <span class="input-success"></span>
+								      <span class="input-error"></span>
+								    </div>
+									</div>
+
+									<div class="row">
+										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+								      <label for="cp">Código Postal</label>
+								      <input type="tel" class="form-control validate" id="cp" placeholder="">
+								      <span class="input-success"></span>
+								      <span class="input-error"></span>
+								    </div>
+										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+											<label for="colonia">Colonia</label>
+											<input type="text" class="form-control validate" id="colonia" placeholder="">
+											<span class="input-success"></span>
+											<span class="input-error"></span>
+										</div>
+										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+											<label for="delegacion">Delegación/Municipio</label>
+											<input type="text" class="form-control validate" id="delegacion" placeholder="">
+											<span class="input-success"></span>
+											<span class="input-error"></span>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+											<label for="ciudad">Ciudad/Población</label>
+											<input type="text" class="form-control validate" id="ciudad" placeholder="">
+											<span class="input-success"></span>
+											<span class="input-error"></span>
+										</div>
+										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+											<label for="act_economica">Actividad Económica</label>
+											<select class="form-control validate" id="act_economica" placeholder="">
+												<option value="" selected>...</option>
+												<option value="m">Empleado</option>
+												<option value="e">Etc</option>
+											</select>
+											<span class="input-success"></span>
+											<span class="input-error"></span>
+										</div>
+										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+								      <label for="ingreso_mensual">Ingreso Mensual</label>
+								      <input type="tel" class="form-control validate" id="ingreso_mensual" placeholder="">
+								      <span class="input-success"></span>
+								      <span class="input-error"></span>
+								    </div>
+									</div>
+
+									<div class="row">
+										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+								      <label for="arraigo_laboral">Arraigo Laboral (meses)</label>
+								      <input type="tel" class="form-control validate" id="arraigo_laboral" placeholder="">
+								      <span class="input-success"></span>
+								      <span class="input-error"></span>
+								    </div>
+										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+								      <label for="arraigo_domicilio">Arraigo en domicilio actual (meses)</label>
+								      <input type="tel" class="form-control validate" id="arraigo_domicilio" placeholder="">
+								      <span class="input-success"></span>
+								      <span class="input-error"></span>
+								    </div>
+										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+											<label class="credit-form-title">¿Incluir Co-Acreditado?</label>
+										  <div class="menu_credit_type">
+
+										    <div class="col-xs-3">
+										      <input type="radio" value="si" id="si_acreditado" name="inc_acreditado">
+										      <label class="icon-label" for="si_acreditado">
+										        <div class="icon-item">
+										          <img src="img/icons/yes-icon.svg" class="svg" alt="">
+										        </div>
+														<span>SI</span>
+										      </label>
+										    </div>
+										    <div class="col-xs-3">
+										      <input type="radio" value="no" id="no_acreditado" name="inc_acreditado">
+										      <label class="icon-label" for="no_acreditado">
+										        <div class="icon-item">
+															<img src="img/icons/yes-icon.svg" class="svg no" alt="">
+										        </div>
+														<span>NO</span>
+										      </label>
+										    </div>
+										  </div>
+										</div>
+									</div>
+
+									<div id="co-acreditado-form" class="hidden">
+
+										<h1 class="title-section">Datos Personales del Co-Acreditado</h1>
+
+										<div class="row">
+											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+												<label class="credit-form-title">¿Vive en el mismo domicilio?</label>
+											  <div class="menu_credit_type">
+
+											    <div class="col-xs-3">
+											      <input type="radio" value="si" id="mismo_domicilio" name="domicilio_acreditado">
+											      <label class="icon-label" for="mismo_domicilio">
+											        <div class="icon-item">
+											          <img src="img/icons/yes-icon.svg" class="svg" alt="">
+											        </div>
+															<span>SI</span>
+											      </label>
+											    </div>
+											    <div class="col-xs-3">
+											      <input type="radio" value="no" id="no_mismo_domicilio" name="domicilio_acreditado">
+											      <label class="icon-label" for="no_mismo_domicilio">
+											        <div class="icon-item">
+																<img src="img/icons/yes-icon.svg" class="svg no" alt="">
+											        </div>
+															<span>NO</span>
+											      </label>
+											    </div>
+											  </div>
+											</div>
+											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+												<label for="nombre_ca">Nombre</label>
+												<input type="text" class="form-control validate" id="nombre_ca" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+												<label for="apellido_paterno_ca">Apellido Paterno</label>
+												<input type="text" class="form-control validate" id="apellido_paterno_ca" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+
+										</div>
+										<div class="row">
+											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+												<label for="apellido_materno_ca">Apellido Materno</label>
+												<input type="text" class="form-control validate" id="apellido_materno_ca" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+												<label for="celular_ca">Celular</label>
+												<input type="text" class="form-control validate" id="celular_ca" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+												<label for="correo_ca">Correo</label>
+												<input type="text" class="form-control validate" id="correo_ca" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+
+										</div>
+										<div class="row">
+											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+												<label for="rfc_ca">RFC con homoclave</label>
+												<input type="text" class="form-control validate" id="rfc_ca" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+												<label for="sexo_ca">Sexo</label>
+												<select class="form-control validate" id="sexo_ca" placeholder="">
+													<option value="" selected>...</option>
+													<option value="m">Masculino</option>
+													<option value="f">Femenino</option>
+												</select>
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+												<label for="fecha_nac_ca">Fecha de nacimiento</label>
+												<input type="text" class="form-control validate" id="fecha_nac_ca" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+
+										</div>
+											<div class="row">
+												<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+													<label for="estado_nac_ca">Estado de nacimiento</label>
+													<select class="form-control validate" id="estado_nac_ca" placeholder="">
+														<option value="" selected>...</option>
+														<option value="0">Todo México</option>
+														<option value="1">Aguascalientes</option>
+														<option value="2">Baja California</option>
+														<option value="3">Baja California Sur</option>
+														<option value="4">Campeche</option>
+														<option value="5">Coahuila de Zaragoza</option>
+														<option value="6">Colima</option>
+														<option value="7">Chiapas</option>
+														<option value="8">Chihuahua</option>
+														<option value="9">Distrito Federal</option>
+														<option value="10">Durango</option>
+														<option value="11">Guanajuato</option>
+														<option value="12">Guerrero</option>
+														<option value="13">Hidalgo</option>
+														<option value="14">Jalisco</option>
+														<option value="15">México</option>
+														<option value="16">Michoacán de Ocampo</option>
+														<option value="17">Morelos</option>
+														<option value="18">Nayarit</option>
+														<option value="19">Nuevo León</option>
+														<option value="20">Oaxaca</option>
+														<option value="21">Puebla</option>
+														<option value="22">Querétaro</option>
+														<option value="23">Quintana Roo</option>
+														<option value="24">San Luis Potosí</option>
+														<option value="25">Sinaloa</option>
+														<option value="26">Sonora</option>
+														<option value="27">Tabasco</option>
+														<option value="28">Tamaulipas</option>
+														<option value="29">Tlaxcala</option>
+														<option value="30">Veracruz de Ignacio de la Llave</option>
+														<option value="31">Yucatán</option>
+														<option value="32">Zacatecas</option>
+													</select>
+													<span class="input-success"></span>
+													<span class="input-error"></span>
+												</div>
+												<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+													<label for="nacionalidad_ca">Nacionalidad</label>
+													<select class="form-control validate" id="nacionalidad_ca" placeholder="">
+														<option value="" selected>...</option>
+														<option value="m">Mexicana</option>
+														<option value="e">Extranjera</option>
+													</select>
+													<span class="input-success"></span>
+													<span class="input-error"></span>
+												</div>
+												<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+													<label for="curp_ca">CURP</label>
+													<input type="text" class="form-control validate" id="curp_ca" placeholder="">
+													<span class="input-success"></span>
+													<span class="input-error"></span>
+												</div>
+											</div>
+
+											<h1 class="title-section">Domicilio del Co-Acreditado</h1>
+
+											<div class="row">
+												<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+													<label for="calle_ca">Calle</label>
+													<input type="text" class="form-control validate" id="calle_ca" placeholder="">
+													<span class="input-success"></span>
+													<span class="input-error"></span>
+												</div>
+												<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										      <label for="num_ext_ca">Número exterior</label>
+										      <input type="tel" class="form-control validate" id="num_ext_ca" placeholder="">
+										      <span class="input-success"></span>
+										      <span class="input-error"></span>
+										    </div>
+												<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										      <label for="num_int_ca">Número interios</label>
+										      <input type="tel" class="form-control validate" id="num_int_ca" placeholder="">
+										      <span class="input-success"></span>
+										      <span class="input-error"></span>
+										    </div>
+											</div>
+
+											<div class="row">
+												<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										      <label for="cp_ca">Código Postal</label>
+										      <input type="tel" class="form-control validate" id="cp_ca" placeholder="">
+										      <span class="input-success"></span>
+										      <span class="input-error"></span>
+										    </div>
+												<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+													<label for="colonia_ca">Colonia</label>
+													<input type="text" class="form-control validate" id="colonia_ca" placeholder="">
+													<span class="input-success"></span>
+													<span class="input-error"></span>
+												</div>
+												<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+													<label for="delegacion_ca">Delegación/Municipio</label>
+													<input type="text" class="form-control validate" id="delegacion_ca" placeholder="">
+													<span class="input-success"></span>
+													<span class="input-error"></span>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+													<label for="ciudad_ca">Ciudad/Población</label>
+													<input type="text" class="form-control validate" id="ciudad_ca" placeholder="">
+													<span class="input-success"></span>
+													<span class="input-error"></span>
+												</div>
+												<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+													<label for="act_economica_ca">Actividad Económica</label>
+													<select class="form-control validate" id="act_economica_ca" placeholder="">
+														<option value="" selected>...</option>
+														<option value="m">Empleado</option>
+														<option value="e">Etc</option>
+													</select>
+													<span class="input-success"></span>
+													<span class="input-error"></span>
+												</div>
+												<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										      <label for="ingreso_mensual_ca">Ingreso Mensual</label>
+										      <input type="tel" class="form-control validate" id="ingreso_mensual_ca" placeholder="">
+										      <span class="input-success"></span>
+										      <span class="input-error"></span>
+										    </div>
+											</div>
+
+											<div class="row">
+												<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										      <label for="arraigo_laboral_ca">Arraigo Laboral (meses)</label>
+										      <input type="tel" class="form-control validate" id="arraigo_laboral_ca" placeholder="">
+										      <span class="input-success"></span>
+										      <span class="input-error"></span>
+										    </div>
+												<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										      <label for="arraigo_domicilio_ca">Arraigo en domicilio actual (meses)</label>
+										      <input type="tel" class="form-control validate" id="arraigo_domicilio_ca" placeholder="">
+										      <span class="input-success"></span>
+										      <span class="input-error"></span>
+										    </div>
+											</div>
+									</div>
+
+
+									<div class="row">
+										<h1 class="title-section">Ingresar código</h1>
+										<div class="col-xs-12 col-md-12 code-submit">
+											<input type="tel" class="code-input">
+											<input type="tel" class="code-input">
+											<input type="tel" class="code-input">
+											<input type="tel" class="code-input">
+											<input type="tel" class="code-input">
+										</div>
+									</div>
+								</div>
+							</div><!--Termina datos personales-->
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingTwo">
+							<h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#historial" aria-expanded="false" aria-controls="historial">
+									Historial Crediticio
+									<i class="fa fa-plus"></i>
+								</a>
+							</h4>
+						</div>
+						<div id="historial" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+							<div class="panel-body">
+								<div class="col-xs-12 scrollmenu">
+									<a data-consulta="tradicional" href="#">Consulta Tradicional</a>
+									<a data-consulta="autenticada" href="#">Consulta Autenticada</a>
+								</div>
+
+								<div class="col-xs-12 hidden" id="consulta-tradicional">
+									<div class="center">
+										<div class="checkboxform">
+											<input type="checkbox" value="1" id="verify_auth" name="" />
+											<label for="verify_auth">
+
+											</label>
+											<span>Certifico que cuento con el Documento Firmado de Autorización Consulta Buró de Crédito</span>
+										</div>
+									</div>
+									<div class="center">
+		                <buttton href="#" class="btn btn-form">Verificar</button>
+		              </div>
+								</div>
+
+								<div class="col-xs-12 hidden" id="consulta-autenticada">
+
+										<div class="row">
+											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+												<label for="ingreso_mensual_buro">Ingreso mensual</label>
+												<input type="tel" class="form-control validate" id="ingreso_mensual_buro" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+												<label class="credit-form-title">¿Tienes tarjeta de crédito?</label>
+											  <div class="menu_credit_type">
+
+											    <div class="col-xs-3">
+											      <input type="radio" value="si" id="si_tarjeta_credito" name="tarjeta_credito">
+											      <label class="icon-label" for="si_tarjeta_credito">
+											        <div class="icon-item">
+											          <img src="img/icons/yes-icon.svg" class="svg" alt="">
+											        </div>
+															<span>SI</span>
+											      </label>
+											    </div>
+											    <div class="col-xs-3">
+											      <input type="radio" value="no" id="no_tarjeta_credito" name="tarjeta_credito">
+											      <label class="icon-label" for="no_tarjeta_credito">
+											        <div class="icon-item">
+																<img src="img/icons/yes-icon.svg" class="svg no" alt="">
+											        </div>
+															<span>NO</span>
+											      </label>
+											    </div>
+											  </div>
+											</div>
+											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+												<label for="ult_digitos_tarjeta">Digita los últimos 4 números</label>
+												<input type="tel" class="form-control validate" id="ult_digitos_tarjeta" maxlength="4" disabled>
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+										</div>
+										<div class="row">
+											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+												<label class="credit-form-title">¿Eres titular de un crédito hipotecario?</label>
+											  <div class="menu_credit_type">
+
+											    <div class="col-xs-3">
+											      <input type="radio" value="si" id="si_titular" name="titular_credito_hipotecario">
+											      <label class="icon-label" for="si_titular">
+											        <div class="icon-item">
+											          <img src="img/icons/yes-icon.svg" class="svg" alt="">
+											        </div>
+															<span>SI</span>
+											      </label>
+											    </div>
+											    <div class="col-xs-3">
+											      <input type="radio" value="no" id="no_titular" name="titular_credito_hipotecario">
+											      <label class="icon-label" for="no_titular">
+											        <div class="icon-item">
+																<img src="img/icons/yes-icon.svg" class="svg no" alt="">
+											        </div>
+															<span>NO</span>
+											      </label>
+											    </div>
+											  </div>
+											</div>
+											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+												<label class="credit-form-title">¿Has sido titular de un crédito automotriz en los últimos 24 meses?</label>
+											  <div class="menu_credit_type">
+
+											    <div class="col-xs-3">
+											      <input type="radio" value="si" id="si_automotriz" name="credito_automotriz">
+											      <label class="icon-label" for="si_automotriz">
+											        <div class="icon-item">
+											          <img src="img/icons/yes-icon.svg" class="svg" alt="">
+											        </div>
+															<span>SI</span>
+											      </label>
+											    </div>
+											    <div class="col-xs-3">
+											      <input type="radio" value="no" id="no_automotriz" name="credito_automotriz">
+											      <label class="icon-label" for="no_automotriz">
+											        <div class="icon-item">
+																<img src="img/icons/yes-icon.svg" class="svg no" alt="">
+											        </div>
+															<span>NO</span>
+											      </label>
+											    </div>
+											  </div>
+											</div>
+										</div>
+
+									<div class="center">
+		                <button href="#" class="btn btn-form">Verificar</button>
+		              </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingThree">
+							<h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#pre-autorizacion" aria-expanded="false" aria-controls="pre-autorizacion">
+									Pre Autorización
+									<i class="fa fa-plus"></i>
+								</a>
+							</h4>
+						</div>
+						<div id="pre-autorizacion" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+							<div class="panel-body">
+								<div id="pre-aprobado" class="center img-title hidden">
+									<img src="img/icons/validated.svg" alt="">
+									<h1 class="title-section">Usuario Pre-Aprobado</h1>
+									<p>Folio de usuario</p>
+									<div class="folio-aut">
+										K567GTHRESFD
+										<img src="img/icons/piece-of-paper-and-pencil.svg" alt="">
+									</div>
+									<button href="#" class="btn btn-form">Ingresar</button>
+								</div>
+								<div id="denegado" class="center img-title hidden">
+									<img src="img/icons/unvalidated.svg" alt="">
+									<h1 class="title-section">Usuario No Aprobado</h1>
+
+									<button href="#" class="btn btn-form">Volver al inicio</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingThree">
+							<h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#datos-complementarios" aria-expanded="false" aria-controls="datos-complementarios">
+									Datos Complementarios
+									<i class="fa fa-plus"></i>
+								</a>
+							</h4>
+						</div>
+						<div id="datos-complementarios" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+							<div class="panel-body">
+
+								<div class="row">
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="nss">NSS</label>
+										<input type="text" class="form-control validate" id="nss" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="compl_nacionalidad">Nacionalidad</label>
+										<input type="text" class="form-control validate" id="compl_nacionalidad" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="tel_fijo">Teléfono fijo</label>
+										<input type="tel" class="form-control validate" id="tel_fijo" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+								</div>
+
+								<h1 class="title-section">Domicilio Empleo o Actividad Laboral</h1>
+
+								<div class="row">
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="sector">Sector de la empresa</label>
+										<input type="text" class="form-control validate" id="sector" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="puesto">Puesto Actual</label>
+										<input type="text" class="form-control validate" id="puesto" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="area">Área o Departamento</label>
+										<input type="text" class="form-control validate" id="area" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="calle_empresa">Calle</label>
+										<input type="text" class="form-control validate" id="calle_empresa" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="num_ext_empresa">Número exterior</label>
+										<input type="tel" class="form-control validate" id="num_ext_empresa" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="num_int_empresa">Número interior</label>
+										<input type="tel" class="form-control validate" id="num_int_empresa" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="cp_empresa">Código Postal</label>
+										<input type="tel" class="form-control validate" id="cp_empresa" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="colonia_empresa">Colonia</label>
+										<input type="text" class="form-control validate" id="colonia_empresa" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="delegacion_empresa">Delegación/Municipio</label>
+										<input type="text" class="form-control validate" id="delegacion_empresa" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="ciudad_empresa">Ciudad/Población</label>
+										<input type="text" class="form-control validate" id="ciudad_empresa" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+								</div>
+
+								<h1 class="title-section">Domicilio Empleo o Actividad Laboral del Co-Acreditado</h1>
+
+								<div class="row">
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="sector_ca">Sector de la empresa</label>
+										<input type="text" class="form-control validate" id="sector_ca" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="puesto_ca">Puesto Actual</label>
+										<input type="text" class="form-control validate" id="puesto_ca" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="area_ca">Área o Departamento</label>
+										<input type="text" class="form-control validate" id="area_ca" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="calle_empresa_ca">Calle</label>
+										<input type="text" class="form-control validate" id="calle_empresa_ca" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="num_ext_empresa_ca">Número exterior</label>
+										<input type="tel" class="form-control validate" id="num_ext_empresa_ca" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="num_int_empresa_ca">Número interior</label>
+										<input type="tel" class="form-control validate" id="num_int_empresa_ca" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="cp_empresa_ca">Código Postal</label>
+										<input type="tel" class="form-control validate" id="cp_empresa_ca" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="colonia_empresa_ca">Colonia</label>
+										<input type="text" class="form-control validate" id="colonia_empresa_ca" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="delegacion_empresa_ca">Delegación/Municipio</label>
+										<input type="text" class="form-control validate" id="delegacion_empresa_ca" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+										<label for="ciudad_empresa_ca">Ciudad/Población</label>
+										<input type="text" class="form-control validate" id="ciudad_empresa_ca" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+								</div>
+								<div class="center">
+									<a href="documentos.html" class="btn btn-form">Aplicar</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+
+
+
+
+
+		</div>
+
+	</div>
+
+	<!-- Propuestas credito -->
+
+
+
+
+
+	<div class="footer">
+
+
+		<div class="icon-menu">
+			<img src="img/icons/house.png" alt="">
+		</div>
+
+
+		<div class="icon-menu">
+			<img src="img/icons/analitycs.png" alt="">
+		</div>
+
+		<div class="icon-menu">
+			<img src="img/icons/new-request.png" alt="">
+		</div>
+
+
+
+		<div class="icon-menu">
+			<img src="img/icons/attach.png" alt="">
+		</div>
+
+
+
+		<div class="icon-menu">
+			<img src="img/icons/checklist.png" alt="">
+		</div>
+	</div>
+
+	<script src="libs/jquery.js"></script>
+  <script src="libs/bootstrap.js"></script>
+  <script src="libs/jquery.navgoco.min.js"></script>
+  <script src="libs/bootstrap-datepicker.min.js"></script>
+  <script src="libs/bootstrap-datepicker.es.min.js"></script>
+  <script src="libs/bootstrap-editable.min.js"></script>
+  <script src="libs/cleave.min.js"></script>
+  <script src="libs/cleave-phone.mx.js"></script>
+  <script src="libs/swiper.min.js"></script>
+  <script src="libs/dropzone.min.js"></script>
+
+	<script src="js/index.js"></script>
+
+</body>
+
+</html>

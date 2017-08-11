@@ -1,0 +1,212 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Static website boilerplate using webpack and bootstrap">
+	<meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1, maximum-scale=1">
+
+	<title>BX+ - Simulador Créditos</title>
+
+	<!-- Disable tap highlight on IE -->
+	<meta name="msapplication-tap-highlight" content="no">
+
+	<!-- Web Application Manifest -->
+	<link rel="manifest" href="manifest.json">
+
+	<!-- Add to homescreen for Chrome on Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="Static Website Boilerplate">
+	<link rel="icon" sizes="192x192" href="/img/chrome-touch-icon-192x192.png">
+
+	<!-- Add to homescreen for Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Static Website Boilerplate">
+	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.1.1/min/dropzone.min.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="css/style.css">
+
+	<!-- Tile icon for Win8 (144x144 + tile color) -->
+	<meta name="msapplication-TileImage" content="/img/ms-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#263238">
+
+	<!-- Color the status bar on mobile devices -->
+	<meta name="theme-color" content="#263238">
+
+</head>
+
+<body>
+	<div class="mobile-wrapper"></div>
+
+	<nav>
+		<div class="floating-icon">
+			<span class="open-menu">
+				<i class="fa fa-sort-up"></i>
+			</span>
+		</div>
+		<span class="open-menu">
+			<i class="fa fa-sort-up"></i>
+		</span>
+		<div class="sidebar-header">
+			<span class="text-right"><a href="#" id="nav-close">X</a></span>
+			<div class="sidebar-header-logo">
+
+				<img src="img/logo.png" alt="">
+			</div>
+			<div class="sidebar-header-profilepic">
+				<img src="img/profile.jpg" alt="">
+			</div>
+			<p>Hola Laura</p>
+		</div>
+		<ul class="list-unstyled main-menu">
+
+			<!--Include your navigation here-->
+
+			<li><span class="icon"><img src="img/icons/analitycs.png" alt=""></span><a href="#">Notificaciones </a></li>
+			<li><span class="icon"><img src="img/icons/solicitud.png" alt=""></span><a href="#">Nueva solicitud </a></li>
+			<li><span class="icon"><img src="img/icons/004-smartphone.png" alt=""></span><a href="#">Folio de usuario </a></li>
+			<li><span class="icon"><img src="img/icons/home.svg" alt=""></span><a href="#">Home </a></li>
+			<li><span class="icon"><img src="img/icons/analitycs.svg" alt=""></span><a href="#">Analíticas </a></li>
+			<li><span class="icon"><img src="img/icons/requests.svg" alt=""></span><a href="#">Solicitudes </a></li>
+			<li><span class="icon"><img src="img/icons/verified.svg" alt=""></span><a href="#">Verificaciones </a></li>
+			<li><span class="icon"><img src="img/icons/settings.svg" alt=""></span><a href="#">Configuración </a></li>
+		</ul>
+	</nav>
+
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<!--Include your brand here-->
+
+			<div class="navbar-header">
+
+				<!-- Mobile -->
+				<span id="nav-expander" class="nav-expander fixed">
+	        <img src="img/icons/menu.png" alt="">
+	      </span>
+				<span class="notifications">
+						<img src="img/icons/notification.png" alt="">
+					</span>
+
+			</div>
+			<div class="desktop-nav-links col-md-12">
+				<div class="col-md-8">
+
+				<div class="search">
+
+					<input type="text" class="form-control" placeholder="Buscar">
+				</div>
+
+
+
+
+				</div>
+				<div class="col-md-4">
+					<ul class="nav navbar-nav">
+						<li class="notifications">
+							<img src="img/icons/notification.svg" alt="">
+						</li>
+						<li class="profile">
+							<img src="img/profile.jpg" alt="">
+						</li>
+						<li class="profile-name">Buenas tardes Laura</li>
+					</ul>
+
+				</div>
+			</div>
+
+		</div>
+		<!-- /.container-fluid -->
+	</div>
+	<div class="container">
+		<div class="row">
+
+			<div class="col-xs-12 nav-link">
+
+				<i class="fa fa-arrow-left"></i>Atrás
+			</div>
+		</div>
+		<h1 class="title-section">Simulador Hipotecario</h1>
+		<div class="row">
+
+
+			<div class="col-xs-12 scrollmenu">
+				<a href="#" data-type="adquisicion">Adquisición</a>
+				<a href="#" data-type="mejora">Mejora</a>
+				<a href="#" data-type="liquidez">Liquidez</a>
+				<a href="#" data-type="infonavit">Infonavit</a>
+				<a href="#" data-type="mejora-liquidez">Mejora y Liquidez</a>
+			</div>
+
+			<!-- Aqui inserto forma infonavit -->
+			<div class="col-xs-12">
+			  <div class="row">
+					<div id="form-cotizador"></div>
+					<div id="propuestas-cotizador"></div>
+
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- Propuestas credito -->
+
+
+
+
+
+	<div class="footer">
+
+
+		<div class="icon-menu">
+			<img src="img/icons/house.png" alt="">
+		</div>
+
+
+		<div class="icon-menu">
+			<img src="img/icons/analitycs.png" alt="">
+		</div>
+
+		<div class="icon-menu">
+			<img src="img/icons/new-request.png" alt="">
+		</div>
+
+
+
+		<div class="icon-menu">
+			<img src="img/icons/attach.png" alt="">
+		</div>
+
+
+
+		<div class="icon-menu">
+			<img src="img/icons/checklist.png" alt="">
+		</div>
+	</div>
+
+	<script src="libs/jquery.js"></script>
+  <script src="libs/bootstrap.js"></script>
+  <script src="libs/jquery.navgoco.min.js"></script>
+  <script src="libs/bootstrap-datepicker.min.js"></script>
+  <script src="libs/bootstrap-datepicker.es.min.js"></script>
+  <script src="libs/bootstrap-editable.min.js"></script>
+  <script src="libs/cleave.min.js"></script>
+  <script src="libs/cleave-phone.mx.js"></script>
+  <script src="libs/swiper.min.js"></script>
+  <script src="libs/dropzone.min.js"></script>
+
+	<script src="js/index.js"></script>
+
+</body>
+
+</html>
