@@ -20,7 +20,7 @@ inputsText.forEach(input => input.addEventListener('change', function() {
 
 /** Formulario Solicitud **/
 // agrego evento para manejar la clase valid de cada input y poner su valor debajo
-const inputsSolicitud = $('#formSolicitud input')
+const inputsSolicitud = $('#formDatosPersonales input')
 inputsSolicitud.each(function() {
   let input = $(this)
   input.change(function() {
