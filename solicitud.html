@@ -26,13 +26,13 @@
 	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.1.1/min/dropzone.min.css">
-  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.1.1/min/dropzone.min.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<link rel="stylesheet" href="css/style.css">
 
 	<!-- Tile icon for Win8 (144x144 + tile color) -->
 	<meta name="msapplication-TileImage" content="/img/ms-touch-icon-144x144-precomposed.png">
@@ -129,136 +129,141 @@
 	<div class="container">
 		<div class="row">
 
-			<div class="col-xs-12 nav-link">
+			<div class="col-xs-12 nav-btn-back">
 
 				<i class="fa fa-arrow-left"></i>Atrás
 			</div>
 		</div>
 
 		<div class="row">
-		<form action="" id="formSolicitud">
 
-			<div class="forma-solicitud">
-				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingOne">
-							<h4 class="panel-title">
+
+				<div class="forma-solicitud">
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
 								<a role="button" data-toggle="collapse" data-parent="#accordion" href="#datos-personales" aria-expanded="true" aria-controls="datos-personales">
 									Datos personales
 									<i class="fa fa-minus"></i>
 								</a>
+								<span class="mobile-only">Datos personales</span>
 							</h4>
-						</div>
-						<div id="datos-personales" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-							<div class="panel-body">
-								<div class="row">
-									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-										<label for="nombre">Nombre</label>
-										<input type="text" class="form-control validate" id="nombre" placeholder="">
-										<span class="input-success"></span>
-										<span class="input-error"></span>
+							</div>
+							<form action="" id="formDatosPersonales">
+							<div id="datos-personales" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+									<div class="row">
+										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+											<label for="nombre">Nombre</label>
+											<input type="text" class="form-control validate" id="nombre" placeholder="">
+											<span class="input-success"></span>
+											<span class="input-error"></span>
+										</div>
+										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+											<label for="apellido_paterno">Apellido Paterno</label>
+											<input type="text" class="form-control validate" id="apellido_paterno" placeholder="">
+											<span class="input-success"></span>
+											<span class="input-error"></span>
+										</div>
+										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+											<label for="apellido_materno">Apellido Materno</label>
+											<input type="text" class="form-control validate" id="apellido_materno" placeholder="">
+											<span class="input-success"></span>
+											<span class="input-error"></span>
+										</div>
 									</div>
-									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-										<label for="apellido_paterno">Apellido Paterno</label>
-										<input type="text" class="form-control validate" id="apellido_paterno" placeholder="">
-										<span class="input-success"></span>
-										<span class="input-error"></span>
-									</div>
-									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-										<label for="apellido_materno">Apellido Materno</label>
-										<input type="text" class="form-control validate" id="apellido_materno" placeholder="">
-										<span class="input-success"></span>
-										<span class="input-error"></span>
-									</div>
-								</div>
-								<div class="row">
-									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-										<label for="celular">Celular</label>
-										<input type="text" class="form-control validate" id="celular" placeholder="">
-										<span class="input-success"></span>
-										<span class="input-error"></span>
-									</div>
-									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-										<label for="correo">Correo</label>
-										<input type="text" class="form-control validate" id="correo" placeholder="">
-										<span class="input-success"></span>
-										<span class="input-error"></span>
-									</div>
-									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-										<label for="rfc">RFC con homoclave</label>
-										<input type="text" class="form-control validate" id="rfc" placeholder="">
-										<span class="input-success"></span>
-										<span class="input-error"></span>
-									</div>
-								</div>
-								<div class="row">
-									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-										<label for="sexo">Sexo</label>
-										<select class="form-control validate" id="sexo" placeholder="">
+									<div class="row">
+										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+											<label for="celular">Celular</label>
+											<input type="text" class="form-control validate" id="celular" placeholder="">
+											<span class="input-success"></span>
+											<span class="input-error"></span>
+										</div>
+										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+											<label for="correo">Correo electrónico</label>
+											<input type="text" class="form-control validate" id="correo" placeholder="">
+											<span class="input-success"></span>
+											<span class="input-error"></span>
+										</div>
+										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+											<label for="sexo">Sexo</label>
+											<select class="form-control validate" id="sexo" placeholder="">
 											<option value="" selected>...</option>
 											<option value="m">Masculino</option>
 											<option value="f">Femenino</option>
 										</select>
-										<span class="input-success"></span>
-										<span class="input-error"></span>
+											<span class="input-success"></span>
+											<span class="input-error"></span>
+										</div>
+
 									</div>
-									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-										<label for="fecha_nac">Fecha de nacimiento</label>
-										<input type="text" class="form-control validate" id="fecha_nac" placeholder="">
-										<span class="input-success"></span>
-										<span class="input-error"></span>
-									</div>
-									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-										<label for="estado_nac">Estado de nacimiento</label>
-										<select class="form-control validate" id="estado_nac" placeholder="">
-											<option value="" selected>...</option>
-											<option value="0">Todo México</option>
-											<option value="1">Aguascalientes</option>
-											<option value="2">Baja California</option>
-											<option value="3">Baja California Sur</option>
-											<option value="4">Campeche</option>
-											<option value="5">Coahuila de Zaragoza</option>
-											<option value="6">Colima</option>
-											<option value="7">Chiapas</option>
-											<option value="8">Chihuahua</option>
-											<option value="9">Distrito Federal</option>
-											<option value="10">Durango</option>
-											<option value="11">Guanajuato</option>
-											<option value="12">Guerrero</option>
-											<option value="13">Hidalgo</option>
-											<option value="14">Jalisco</option>
-											<option value="15">México</option>
-											<option value="16">Michoacán de Ocampo</option>
-											<option value="17">Morelos</option>
-											<option value="18">Nayarit</option>
-											<option value="19">Nuevo León</option>
-											<option value="20">Oaxaca</option>
-											<option value="21">Puebla</option>
-											<option value="22">Querétaro</option>
-											<option value="23">Quintana Roo</option>
-											<option value="24">San Luis Potosí</option>
-											<option value="25">Sinaloa</option>
-											<option value="26">Sonora</option>
-											<option value="27">Tabasco</option>
-											<option value="28">Tamaulipas</option>
-											<option value="29">Tlaxcala</option>
-											<option value="30">Veracruz de Ignacio de la Llave</option>
-											<option value="31">Yucatán</option>
-											<option value="32">Zacatecas</option>
-										</select>
-										<span class="input-success"></span>
-										<span class="input-error"></span>
-									</div>
-								</div>
 									<div class="row">
 
 										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+											<label for="fecha_nac">Fecha de nacimiento</label>
+											<input type="text" data-custom-class="form-control validate" id="fecha_nac" data-format="DD-MM-YYYY" data-template="D MMM YYYY" name="date">
+											<span class="input-success"></span>
+											<span class="input-error"></span>
+										</div>
+										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+											<label for="estado_nac">Estado de nacimiento</label>
+											<select class="form-control validate" id="estado_nac" placeholder="">
+												<option value="" selected>...</option>
+												<option value="0">Todo México</option>
+												<option value="1">Aguascalientes</option>
+												<option value="2">Baja California</option>
+												<option value="3">Baja California Sur</option>
+												<option value="4">Campeche</option>
+												<option value="5">Coahuila de Zaragoza</option>
+												<option value="6">Colima</option>
+												<option value="7">Chiapas</option>
+												<option value="8">Chihuahua</option>
+												<option value="9">Distrito Federal</option>
+												<option value="10">Durango</option>
+												<option value="11">Guanajuato</option>
+												<option value="12">Guerrero</option>
+												<option value="13">Hidalgo</option>
+												<option value="14">Jalisco</option>
+												<option value="15">México</option>
+												<option value="16">Michoacán de Ocampo</option>
+												<option value="17">Morelos</option>
+												<option value="18">Nayarit</option>
+												<option value="19">Nuevo León</option>
+												<option value="20">Oaxaca</option>
+												<option value="21">Puebla</option>
+												<option value="22">Querétaro</option>
+												<option value="23">Quintana Roo</option>
+												<option value="24">San Luis Potosí</option>
+												<option value="25">Sinaloa</option>
+												<option value="26">Sonora</option>
+												<option value="27">Tabasco</option>
+												<option value="28">Tamaulipas</option>
+												<option value="29">Tlaxcala</option>
+												<option value="30">Veracruz de Ignacio de la Llave</option>
+												<option value="31">Yucatán</option>
+												<option value="32">Zacatecas</option>
+											</select>
+											<span class="input-success"></span>
+											<span class="input-error"></span>
+										</div>
+										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
 											<label for="nacionalidad">Nacionalidad</label>
 											<select class="form-control validate" id="nacionalidad" placeholder="">
-												<option value="" selected>...</option>
-												<option value="m">Mexicana</option>
-												<option value="e">Extranjera</option>
-											</select>
+											<option value="" selected>...</option>
+											<option value="m">Mexicana</option>
+											<option value="e">Extranjera</option>
+										</select>
+											<span class="input-success"></span>
+											<span class="input-error"></span>
+										</div>
+									</div>
+									<div class="row">
+
+
+										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+											<label for="rfc">RFC con homoclave</label>
+											<input type="text" class="form-control validate" id="rfc" placeholder="">
 											<span class="input-success"></span>
 											<span class="input-error"></span>
 										</div>
@@ -271,10 +276,10 @@
 									</div>
 									<div id="loader-phone-message" class="row hidden">
 										<div class="sk-folding-cube">
-										  <div class="sk-cube1 sk-cube"></div>
-										  <div class="sk-cube2 sk-cube"></div>
-										  <div class="sk-cube4 sk-cube"></div>
-										  <div class="sk-cube3 sk-cube"></div>
+											<div class="sk-cube1 sk-cube"></div>
+											<div class="sk-cube2 sk-cube"></div>
+											<div class="sk-cube4 sk-cube"></div>
+											<div class="sk-cube3 sk-cube"></div>
 
 										</div>
 										<div class="center">
@@ -283,10 +288,20 @@
 									</div>
 									<div class="row">
 										<div id="phone-message-alert" class="alert alert-info alert-dismissible hidden" role="alert">
-										  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-										  <i class="fa fa-info-circle"></i> Hemos enviado un código a tu celular
+											<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											<i class="fa fa-info-circle"></i> Hemos enviado un código a tu celular
+										</div>
+										<h1 class="title-section">Ingresar código</h1>
+										<div class="col-xs-12 col-md-12 code-submit">
+											<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+											<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+											<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+											<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+											<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
 										</div>
 									</div>
+
+
 
 									<h1 class="title-section">Domicilio</h1>
 
@@ -298,26 +313,26 @@
 											<span class="input-error"></span>
 										</div>
 										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-								      <label for="num_ext">Número exterior</label>
-								      <input type="tel" class="form-control validate" id="num_ext" placeholder="">
-								      <span class="input-success"></span>
-								      <span class="input-error"></span>
-								    </div>
+											<label for="num_ext">Número exterior</label>
+											<input type="tel" class="form-control validate" id="num_ext" placeholder="" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+											<span class="input-success"></span>
+											<span class="input-error"></span>
+										</div>
 										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-								      <label for="num_int">Número interios</label>
-								      <input type="tel" class="form-control validate" id="num_int" placeholder="">
-								      <span class="input-success"></span>
-								      <span class="input-error"></span>
-								    </div>
+											<label for="num_int">Número interior</label>
+											<input type="tel" class="form-control validate" id="num_int" placeholder="" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+											<span class="input-success"></span>
+											<span class="input-error"></span>
+										</div>
 									</div>
 
 									<div class="row">
 										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-								      <label for="cp">Código Postal</label>
-								      <input type="tel" class="form-control validate" id="cp" placeholder="">
-								      <span class="input-success"></span>
-								      <span class="input-error"></span>
-								    </div>
+											<label for="cp">Código Postal</label>
+											<input type="tel" class="form-control validate" id="cp" placeholder="" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+											<span class="input-success"></span>
+											<span class="input-error"></span>
+										</div>
 										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
 											<label for="colonia">Colonia</label>
 											<input type="text" class="form-control validate" id="colonia" placeholder="">
@@ -350,49 +365,133 @@
 											<span class="input-error"></span>
 										</div>
 										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-								      <label for="ingreso_mensual">Ingreso Mensual</label>
-								      <input type="tel" class="form-control validate" id="ingreso_mensual" placeholder="">
-								      <span class="input-success"></span>
-								      <span class="input-error"></span>
-								    </div>
+											<label for="ingreso_mensual">Ingreso Mensual</label>
+											<input type="tel" class="form-control validate" id="ingreso_mensual" placeholder="" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+											<span class="input-success"></span>
+											<span class="input-error"></span>
+										</div>
 									</div>
 
 									<div class="row">
 										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-								      <label for="arraigo_laboral">Arraigo Laboral (meses)</label>
-								      <input type="tel" class="form-control validate" id="arraigo_laboral" placeholder="">
-								      <span class="input-success"></span>
-								      <span class="input-error"></span>
-								    </div>
+											<label for="arraigo_laboral">Arraigo Laboral (meses)</label>
+											<select class="form-control validate" id="arraigo_laboral">
+												<option value="">...</option>
+								      	<option value="1">1</option>
+								      	<option value="2">2</option>
+								      	<option value="3">3</option>
+								      	<option value="4">4</option>
+								      	<option value="5">5</option>
+								      	<option value="6">6</option>
+								      	<option value="7">7</option>
+								      	<option value="8">8</option>
+								      	<option value="9">9</option>
+								      	<option value="10">10</option>
+								      	<option value="11">11</option>
+								      	<option value="12">12</option>
+								      	<option value="13">13</option>
+								      	<option value="14">14</option>
+								      	<option value="15">15</option>
+								      	<option value="16">16</option>
+								      	<option value="17">17</option>
+								      	<option value="18">18</option>
+								      	<option value="19">19</option>
+								      	<option value="20">20</option>
+								      	<option value="21">21</option>
+								      	<option value="22">22</option>
+								      	<option value="23">23</option>
+								      	<option value="24">24</option>
+								      	<option value="25">25</option>
+								      	<option value="26">26</option>
+								      	<option value="27">27</option>
+								      	<option value="28">28</option>
+								      	<option value="29">29</option>
+								      	<option value="30">30</option>
+								      	<option value="31">31</option>
+								      	<option value="32">32</option>
+								      	<option value="33">33</option>
+								      	<option value="34">34</option>
+								      	<option value="35">35</option>
+								      	<option value="36">36</option>
+								      	<option value="37">37</option>
+								      	<option value="38">38</option>
+								      	<option value="39">39</option>
+								      	<option value="40">40</option>
+								      </select>
+											<span class="input-success"></span>
+											<span class="input-error"></span>
+										</div>
 										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-								      <label for="arraigo_domicilio">Arraigo en domicilio actual (meses)</label>
-								      <input type="tel" class="form-control validate" id="arraigo_domicilio" placeholder="">
-								      <span class="input-success"></span>
-								      <span class="input-error"></span>
-								    </div>
+											<label for="arraigo_domicilio">Arraigo en domicilio actual (meses)</label>
+											<select class="form-control validate" id="arraigo_domicilio">
+												<option value="">...</option>
+								      	<option value="1">1</option>
+								      	<option value="2">2</option>
+								      	<option value="3">3</option>
+								      	<option value="4">4</option>
+								      	<option value="5">5</option>
+								      	<option value="6">6</option>
+								      	<option value="7">7</option>
+								      	<option value="8">8</option>
+								      	<option value="9">9</option>
+								      	<option value="10">10</option>
+								      	<option value="11">11</option>
+								      	<option value="12">12</option>
+								      	<option value="13">13</option>
+								      	<option value="14">14</option>
+								      	<option value="15">15</option>
+								      	<option value="16">16</option>
+								      	<option value="17">17</option>
+								      	<option value="18">18</option>
+								      	<option value="19">19</option>
+								      	<option value="20">20</option>
+								      	<option value="21">21</option>
+								      	<option value="22">22</option>
+								      	<option value="23">23</option>
+								      	<option value="24">24</option>
+								      	<option value="25">25</option>
+								      	<option value="26">26</option>
+								      	<option value="27">27</option>
+								      	<option value="28">28</option>
+								      	<option value="29">29</option>
+								      	<option value="30">30</option>
+								      	<option value="31">31</option>
+								      	<option value="32">32</option>
+								      	<option value="33">33</option>
+								      	<option value="34">34</option>
+								      	<option value="35">35</option>
+								      	<option value="36">36</option>
+								      	<option value="37">37</option>
+								      	<option value="38">38</option>
+								      	<option value="39">39</option>
+								      	<option value="40">40</option>
+								      </select>
+											<span class="input-success"></span>
+											<span class="input-error"></span>
+										</div>
 										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
 											<label class="credit-form-title">¿Incluir Co-Acreditado?</label>
-										  <div class="menu_credit_type">
+											<div class="menu_credit_type">
 
-										    <div class="col-xs-3">
-										      <input type="radio" value="si" id="si_acreditado" name="inc_acreditado">
-										      <label class="icon-label" for="si_acreditado">
+												<div class="col-xs-3">
+													<input type="radio" value="si" id="si_acreditado" name="inc_acreditado">
+													<label class="icon-label" for="si_acreditado">
 										        <div class="icon-item">
 										          <img src="img/icons/yes-icon.svg" class="svg" alt="">
 										        </div>
 														<span>SI</span>
 										      </label>
-										    </div>
-										    <div class="col-xs-3">
-										      <input type="radio" value="no" id="no_acreditado" name="inc_acreditado">
-										      <label class="icon-label" for="no_acreditado">
+												</div>
+												<div class="col-xs-3">
+													<input type="radio" value="no" id="no_acreditado" name="inc_acreditado">
+													<label class="icon-label" for="no_acreditado">
 										        <div class="icon-item">
 															<img src="img/icons/yes-icon.svg" class="svg no" alt="">
 										        </div>
 														<span>NO</span>
 										      </label>
-										    </div>
-										  </div>
+												</div>
+											</div>
 										</div>
 									</div>
 
@@ -403,27 +502,27 @@
 										<div class="row">
 											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
 												<label class="credit-form-title">¿Vive en el mismo domicilio?</label>
-											  <div class="menu_credit_type">
+												<div class="menu_credit_type">
 
-											    <div class="col-xs-3">
-											      <input type="radio" value="si" id="mismo_domicilio" name="domicilio_acreditado">
-											      <label class="icon-label" for="mismo_domicilio">
+													<div class="col-xs-3">
+														<input type="radio" value="si" id="mismo_domicilio" name="domicilio_acreditado">
+														<label class="icon-label" for="mismo_domicilio">
 											        <div class="icon-item">
 											          <img src="img/icons/yes-icon.svg" class="svg" alt="">
 											        </div>
 															<span>SI</span>
 											      </label>
-											    </div>
-											    <div class="col-xs-3">
-											      <input type="radio" value="no" id="no_mismo_domicilio" name="domicilio_acreditado">
-											      <label class="icon-label" for="no_mismo_domicilio">
+													</div>
+													<div class="col-xs-3">
+														<input type="radio" value="no" id="no_mismo_domicilio" name="domicilio_acreditado">
+														<label class="icon-label" for="no_mismo_domicilio">
 											        <div class="icon-item">
 																<img src="img/icons/yes-icon.svg" class="svg no" alt="">
 											        </div>
 															<span>NO</span>
 											      </label>
-											    </div>
-											  </div>
+													</div>
+												</div>
 											</div>
 											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
 												<label for="nombre_ca">Nombre</label>
@@ -453,7 +552,7 @@
 												<span class="input-error"></span>
 											</div>
 											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-												<label for="correo_ca">Correo</label>
+												<label for="correo_ca">Correo electrónico</label>
 												<input type="text" class="form-control validate" id="correo_ca" placeholder="">
 												<span class="input-success"></span>
 												<span class="input-error"></span>
@@ -461,12 +560,7 @@
 
 										</div>
 										<div class="row">
-											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-												<label for="rfc_ca">RFC con homoclave</label>
-												<input type="text" class="form-control validate" id="rfc_ca" placeholder="">
-												<span class="input-success"></span>
-												<span class="input-error"></span>
-											</div>
+
 											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
 												<label for="sexo_ca">Sexo</label>
 												<select class="form-control validate" id="sexo_ca" placeholder="">
@@ -479,16 +573,13 @@
 											</div>
 											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
 												<label for="fecha_nac_ca">Fecha de nacimiento</label>
-												<input type="text" class="form-control validate" id="fecha_nac_ca" placeholder="">
+												<input type="text" data-custom-class="form-control validate" id="fecha_nac_ca" data-format="DD-MM-YYYY" data-template="D MMM YYYY" name="date">
 												<span class="input-success"></span>
 												<span class="input-error"></span>
 											</div>
-
-										</div>
-											<div class="row">
-												<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-													<label for="estado_nac_ca">Estado de nacimiento</label>
-													<select class="form-control validate" id="estado_nac_ca" placeholder="">
+											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+												<label for="estado_nac_ca">Estado de nacimiento</label>
+												<select class="form-control validate" id="estado_nac_ca" placeholder="">
 														<option value="" selected>...</option>
 														<option value="0">Todo México</option>
 														<option value="1">Aguascalientes</option>
@@ -524,126 +615,213 @@
 														<option value="31">Yucatán</option>
 														<option value="32">Zacatecas</option>
 													</select>
-													<span class="input-success"></span>
-													<span class="input-error"></span>
-												</div>
-												<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-													<label for="nacionalidad_ca">Nacionalidad</label>
-													<select class="form-control validate" id="nacionalidad_ca" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+
+										</div>
+										<div class="row">
+
+											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+												<label for="nacionalidad_ca">Nacionalidad</label>
+												<select class="form-control validate" id="nacionalidad_ca" placeholder="">
 														<option value="" selected>...</option>
 														<option value="m">Mexicana</option>
 														<option value="e">Extranjera</option>
 													</select>
-													<span class="input-success"></span>
-													<span class="input-error"></span>
-												</div>
-												<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-													<label for="curp_ca">CURP</label>
-													<input type="text" class="form-control validate" id="curp_ca" placeholder="">
-													<span class="input-success"></span>
-													<span class="input-error"></span>
-												</div>
+												<span class="input-success"></span>
+												<span class="input-error"></span>
 											</div>
-
-											<h1 class="title-section">Domicilio del Co-Acreditado</h1>
-
-											<div class="row">
-												<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-													<label for="calle_ca">Calle</label>
-													<input type="text" class="form-control validate" id="calle_ca" placeholder="">
-													<span class="input-success"></span>
-													<span class="input-error"></span>
-												</div>
-												<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-										      <label for="num_ext_ca">Número exterior</label>
-										      <input type="tel" class="form-control validate" id="num_ext_ca" placeholder="">
-										      <span class="input-success"></span>
-										      <span class="input-error"></span>
-										    </div>
-												<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-										      <label for="num_int_ca">Número interios</label>
-										      <input type="tel" class="form-control validate" id="num_int_ca" placeholder="">
-										      <span class="input-success"></span>
-										      <span class="input-error"></span>
-										    </div>
+											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+												<label for="rfc_ca">RFC con homoclave</label>
+												<input type="text" class="form-control validate" id="rfc_ca" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
 											</div>
-
-											<div class="row">
-												<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-										      <label for="cp_ca">Código Postal</label>
-										      <input type="tel" class="form-control validate" id="cp_ca" placeholder="">
-										      <span class="input-success"></span>
-										      <span class="input-error"></span>
-										    </div>
-												<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-													<label for="colonia_ca">Colonia</label>
-													<input type="text" class="form-control validate" id="colonia_ca" placeholder="">
-													<span class="input-success"></span>
-													<span class="input-error"></span>
-												</div>
-												<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-													<label for="delegacion_ca">Delegación/Municipio</label>
-													<input type="text" class="form-control validate" id="delegacion_ca" placeholder="">
-													<span class="input-success"></span>
-													<span class="input-error"></span>
-												</div>
+											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+												<label for="curp_ca">CURP</label>
+												<input type="text" class="form-control validate" id="curp_ca" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
 											</div>
+										</div>
 
-											<div class="row">
-												<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-													<label for="ciudad_ca">Ciudad/Población</label>
-													<input type="text" class="form-control validate" id="ciudad_ca" placeholder="">
-													<span class="input-success"></span>
-													<span class="input-error"></span>
-												</div>
-												<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-													<label for="act_economica_ca">Actividad Económica</label>
-													<select class="form-control validate" id="act_economica_ca" placeholder="">
+										<h1 class="title-section">Domicilio del Co-Acreditado</h1>
+
+										<div class="row">
+											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+												<label for="calle_ca">Calle</label>
+												<input type="text" class="form-control validate" id="calle_ca" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+												<label for="num_ext_ca">Número exterior</label>
+												<input type="tel" class="form-control validate" id="num_ext_ca" placeholder="" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+												<label for="num_int_ca">Número interior</label>
+												<input type="tel" class="form-control validate" id="num_int_ca" placeholder="" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+												<label for="cp_ca">Código Postal</label>
+												<input type="tel" class="form-control validate" id="cp_ca" placeholder="" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+												<label for="colonia_ca">Colonia</label>
+												<input type="text" class="form-control validate" id="colonia_ca" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+												<label for="delegacion_ca">Delegación/Municipio</label>
+												<input type="text" class="form-control validate" id="delegacion_ca" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+												<label for="ciudad_ca">Ciudad/Población</label>
+												<input type="text" class="form-control validate" id="ciudad_ca" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+												<label for="act_economica_ca">Actividad Económica</label>
+												<select class="form-control validate" id="act_economica_ca" placeholder="">
 														<option value="" selected>...</option>
 														<option value="m">Empleado</option>
 														<option value="e">Etc</option>
 													</select>
-													<span class="input-success"></span>
-													<span class="input-error"></span>
-												</div>
-												<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-										      <label for="ingreso_mensual_ca">Ingreso Mensual</label>
-										      <input type="tel" class="form-control validate" id="ingreso_mensual_ca" placeholder="">
-										      <span class="input-success"></span>
-										      <span class="input-error"></span>
-										    </div>
+												<span class="input-success"></span>
+												<span class="input-error"></span>
 											</div>
-
-											<div class="row">
-												<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-										      <label for="arraigo_laboral_ca">Arraigo Laboral (meses)</label>
-										      <input type="tel" class="form-control validate" id="arraigo_laboral_ca" placeholder="">
-										      <span class="input-success"></span>
-										      <span class="input-error"></span>
-										    </div>
-												<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-										      <label for="arraigo_domicilio_ca">Arraigo en domicilio actual (meses)</label>
-										      <input type="tel" class="form-control validate" id="arraigo_domicilio_ca" placeholder="">
-										      <span class="input-success"></span>
-										      <span class="input-error"></span>
-										    </div>
+											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+												<label for="ingreso_mensual_ca">Ingreso Mensual</label>
+												<input type="tel" class="form-control validate" id="ingreso_mensual_ca" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
 											</div>
-									</div>
+										</div>
 
-
-									<div class="row">
-										<h1 class="title-section">Ingresar código</h1>
-										<div class="col-xs-12 col-md-12 code-submit">
-											<input type="tel" class="code-input">
-											<input type="tel" class="code-input">
-											<input type="tel" class="code-input">
-											<input type="tel" class="code-input">
-											<input type="tel" class="code-input">
+										<div class="row">
+											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+												<label for="arraigo_laboral_ca">Arraigo Laboral (meses)</label>
+												<select class="form-control validate" id="arraigo_laboral_ca">
+														<option value="">...</option>
+										      	<option value="1">1</option>
+										      	<option value="2">2</option>
+										      	<option value="3">3</option>
+										      	<option value="4">4</option>
+										      	<option value="5">5</option>
+										      	<option value="6">6</option>
+										      	<option value="7">7</option>
+										      	<option value="8">8</option>
+										      	<option value="9">9</option>
+										      	<option value="10">10</option>
+										      	<option value="11">11</option>
+										      	<option value="12">12</option>
+										      	<option value="13">13</option>
+										      	<option value="14">14</option>
+										      	<option value="15">15</option>
+										      	<option value="16">16</option>
+										      	<option value="17">17</option>
+										      	<option value="18">18</option>
+										      	<option value="19">19</option>
+										      	<option value="20">20</option>
+										      	<option value="21">21</option>
+										      	<option value="22">22</option>
+										      	<option value="23">23</option>
+										      	<option value="24">24</option>
+										      	<option value="25">25</option>
+										      	<option value="26">26</option>
+										      	<option value="27">27</option>
+										      	<option value="28">28</option>
+										      	<option value="29">29</option>
+										      	<option value="30">30</option>
+										      	<option value="31">31</option>
+										      	<option value="32">32</option>
+										      	<option value="33">33</option>
+										      	<option value="34">34</option>
+										      	<option value="35">35</option>
+										      	<option value="36">36</option>
+										      	<option value="37">37</option>
+										      	<option value="38">38</option>
+										      	<option value="39">39</option>
+										      	<option value="40">40</option>
+										      </select>
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+												<label for="arraigo_domicilio_ca">Arraigo en domicilio actual (meses)</label>
+												<select class="form-control validate" id="arraigo_domicilio_ca">
+													<option value="">...</option>
+										      	<option value="1">1</option>
+										      	<option value="2">2</option>
+										      	<option value="3">3</option>
+										      	<option value="4">4</option>
+										      	<option value="5">5</option>
+										      	<option value="6">6</option>
+										      	<option value="7">7</option>
+										      	<option value="8">8</option>
+										      	<option value="9">9</option>
+										      	<option value="10">10</option>
+										      	<option value="11">11</option>
+										      	<option value="12">12</option>
+										      	<option value="13">13</option>
+										      	<option value="14">14</option>
+										      	<option value="15">15</option>
+										      	<option value="16">16</option>
+										      	<option value="17">17</option>
+										      	<option value="18">18</option>
+										      	<option value="19">19</option>
+										      	<option value="20">20</option>
+										      	<option value="21">21</option>
+										      	<option value="22">22</option>
+										      	<option value="23">23</option>
+										      	<option value="24">24</option>
+										      	<option value="25">25</option>
+										      	<option value="26">26</option>
+										      	<option value="27">27</option>
+										      	<option value="28">28</option>
+										      	<option value="29">29</option>
+										      	<option value="30">30</option>
+										      	<option value="31">31</option>
+										      	<option value="32">32</option>
+										      	<option value="33">33</option>
+										      	<option value="34">34</option>
+										      	<option value="35">35</option>
+										      	<option value="36">36</option>
+										      	<option value="37">37</option>
+										      	<option value="38">38</option>
+										      	<option value="39">39</option>
+										      	<option value="40">40</option>
+										      </select>
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
 										</div>
 									</div>
+									<div class="center">
+										<button id="paso-datos" class="btn btn-form nav-btn">Siguiente</button>
+									</div>
 								</div>
-							</div><!--Termina datos personales-->
-						</div>
+							</div>
+							</form>
+							<!--Termina datos personales-->
+
 					</div>
 					<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingTwo">
@@ -652,13 +830,14 @@
 									Historial Crediticio
 									<i class="fa fa-plus"></i>
 								</a>
+								<span class="mobile-only">Historial Crediticio</span>
 							</h4>
 						</div>
 						<div id="historial" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 							<div class="panel-body">
 								<div class="col-xs-12 scrollmenu">
-									<a data-consulta="tradicional" href="#">Consulta Tradicional</a>
-									<a data-consulta="autenticada" href="#">Consulta Autenticada</a>
+									<a data-consulta="tradicional">Consulta Tradicional</a>
+									<a data-consulta="autenticada">Consulta Autenticada</a>
 								</div>
 
 								<div class="col-xs-12 hidden" id="consulta-tradicional">
@@ -672,104 +851,104 @@
 										</div>
 									</div>
 									<div class="center">
-		                <buttton href="#" class="btn btn-form">Verificar</button>
-		              </div>
+										<buttton href="#" class="btn btn-form nav-btn">Verificar</button>
+									</div>
 								</div>
 
 								<div class="col-xs-12 hidden" id="consulta-autenticada">
 
-										<div class="row">
-											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-												<label for="ingreso_mensual_buro">Ingreso mensual</label>
-												<input type="tel" class="form-control validate" id="ingreso_mensual_buro" placeholder="">
-												<span class="input-success"></span>
-												<span class="input-error"></span>
-											</div>
-											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-												<label class="credit-form-title">¿Tienes tarjeta de crédito?</label>
-											  <div class="menu_credit_type">
+									<div class="row">
+										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+											<label for="ingreso_mensual_buro">Ingreso mensual</label>
+											<input type="tel" class="form-control validate" id="ingreso_mensual_buro" placeholder="" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+											<span class="input-success"></span>
+											<span class="input-error"></span>
+										</div>
+										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+											<label class="credit-form-title">¿Tienes tarjeta de crédito?</label>
+											<div class="menu_credit_type">
 
-											    <div class="col-xs-3">
-											      <input type="radio" value="si" id="si_tarjeta_credito" name="tarjeta_credito">
-											      <label class="icon-label" for="si_tarjeta_credito">
+												<div class="col-xs-3">
+													<input type="radio" value="si" id="si_tarjeta_credito" name="tarjeta_credito">
+													<label class="icon-label" for="si_tarjeta_credito">
 											        <div class="icon-item">
 											          <img src="img/icons/yes-icon.svg" class="svg" alt="">
 											        </div>
 															<span>SI</span>
 											      </label>
-											    </div>
-											    <div class="col-xs-3">
-											      <input type="radio" value="no" id="no_tarjeta_credito" name="tarjeta_credito">
-											      <label class="icon-label" for="no_tarjeta_credito">
+												</div>
+												<div class="col-xs-3">
+													<input type="radio" value="no" id="no_tarjeta_credito" name="tarjeta_credito">
+													<label class="icon-label" for="no_tarjeta_credito">
 											        <div class="icon-item">
 																<img src="img/icons/yes-icon.svg" class="svg no" alt="">
 											        </div>
 															<span>NO</span>
 											      </label>
-											    </div>
-											  </div>
-											</div>
-											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-												<label for="ult_digitos_tarjeta">Digita los últimos 4 números</label>
-												<input type="tel" class="form-control validate" id="ult_digitos_tarjeta" maxlength="4" disabled>
-												<span class="input-success"></span>
-												<span class="input-error"></span>
+												</div>
 											</div>
 										</div>
-										<div class="row">
-											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-												<label class="credit-form-title">¿Eres titular de un crédito hipotecario?</label>
-											  <div class="menu_credit_type">
+										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+											<label for="ult_digitos_tarjeta">Digita los últimos 4 números</label>
+											<input type="tel" class="form-control validate" id="ult_digitos_tarjeta" maxlength="4" disabled onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+											<span class="input-success"></span>
+											<span class="input-error"></span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+											<label class="credit-form-title">¿Eres titular de un crédito hipotecario?</label>
+											<div class="menu_credit_type">
 
-											    <div class="col-xs-3">
-											      <input type="radio" value="si" id="si_titular" name="titular_credito_hipotecario">
-											      <label class="icon-label" for="si_titular">
+												<div class="col-xs-3">
+													<input type="radio" value="si" id="si_titular" name="titular_credito_hipotecario">
+													<label class="icon-label" for="si_titular">
 											        <div class="icon-item">
 											          <img src="img/icons/yes-icon.svg" class="svg" alt="">
 											        </div>
 															<span>SI</span>
 											      </label>
-											    </div>
-											    <div class="col-xs-3">
-											      <input type="radio" value="no" id="no_titular" name="titular_credito_hipotecario">
-											      <label class="icon-label" for="no_titular">
+												</div>
+												<div class="col-xs-3">
+													<input type="radio" value="no" id="no_titular" name="titular_credito_hipotecario">
+													<label class="icon-label" for="no_titular">
 											        <div class="icon-item">
 																<img src="img/icons/yes-icon.svg" class="svg no" alt="">
 											        </div>
 															<span>NO</span>
 											      </label>
-											    </div>
-											  </div>
-											</div>
-											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
-												<label class="credit-form-title">¿Has sido titular de un crédito automotriz en los últimos 24 meses?</label>
-											  <div class="menu_credit_type">
-
-											    <div class="col-xs-3">
-											      <input type="radio" value="si" id="si_automotriz" name="credito_automotriz">
-											      <label class="icon-label" for="si_automotriz">
-											        <div class="icon-item">
-											          <img src="img/icons/yes-icon.svg" class="svg" alt="">
-											        </div>
-															<span>SI</span>
-											      </label>
-											    </div>
-											    <div class="col-xs-3">
-											      <input type="radio" value="no" id="no_automotriz" name="credito_automotriz">
-											      <label class="icon-label" for="no_automotriz">
-											        <div class="icon-item">
-																<img src="img/icons/yes-icon.svg" class="svg no" alt="">
-											        </div>
-															<span>NO</span>
-											      </label>
-											    </div>
-											  </div>
+												</div>
 											</div>
 										</div>
+										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
+											<label class="credit-form-title">¿Has sido titular de un crédito automotriz en los últimos 24 meses?</label>
+											<div class="menu_credit_type">
+
+												<div class="col-xs-3">
+													<input type="radio" value="si" id="si_automotriz" name="credito_automotriz">
+													<label class="icon-label" for="si_automotriz">
+											        <div class="icon-item">
+											          <img src="img/icons/yes-icon.svg" class="svg" alt="">
+											        </div>
+															<span>SI</span>
+											      </label>
+												</div>
+												<div class="col-xs-3">
+													<input type="radio" value="no" id="no_automotriz" name="credito_automotriz">
+													<label class="icon-label" for="no_automotriz">
+											        <div class="icon-item">
+																<img src="img/icons/yes-icon.svg" class="svg no" alt="">
+											        </div>
+															<span>NO</span>
+											      </label>
+												</div>
+											</div>
+										</div>
+									</div>
 
 									<div class="center">
-		                <button href="#" class="btn btn-form">Verificar</button>
-		              </div>
+										<button href="#" class="btn btn-form nav-btn">Verificar</button>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -781,11 +960,12 @@
 									Pre Autorización
 									<i class="fa fa-plus"></i>
 								</a>
+								<span class="mobile-only">Pre Autorización</span>
 							</h4>
 						</div>
 						<div id="pre-autorizacion" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 							<div class="panel-body">
-								<div id="pre-aprobado" class="center img-title hidden">
+								<div id="pre-aprobado" class="center img-title">
 									<img src="img/icons/validated.svg" alt="">
 									<h1 class="title-section">Usuario Pre-Aprobado</h1>
 									<p>Folio de usuario</p>
@@ -793,13 +973,13 @@
 										K567GTHRESFD
 										<img src="img/icons/piece-of-paper-and-pencil.svg" alt="">
 									</div>
-									<button href="#" class="btn btn-form">Ingresar</button>
+									<button href="#" class="btn btn-form nav-btn">Ingresar</button>
 								</div>
 								<div id="denegado" class="center img-title hidden">
 									<img src="img/icons/unvalidated.svg" alt="">
 									<h1 class="title-section">Usuario No Aprobado</h1>
 
-									<button href="#" class="btn btn-form">Volver al inicio</button>
+									<a href="index.html" class="btn btn-form">Volver al inicio</a>
 								</div>
 							</div>
 						</div>
@@ -811,6 +991,7 @@
 									Datos Complementarios
 									<i class="fa fa-plus"></i>
 								</a>
+								<span class="mobile-only">Datos Complementarios</span>
 							</h4>
 						</div>
 						<div id="datos-complementarios" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
@@ -831,7 +1012,7 @@
 									</div>
 									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
 										<label for="tel_fijo">Teléfono fijo</label>
-										<input type="tel" class="form-control validate" id="tel_fijo" placeholder="">
+										<input type="tel" class="form-control validate" id="tel_fijo" placeholder="" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
 										<span class="input-success"></span>
 										<span class="input-error"></span>
 									</div>
@@ -869,13 +1050,13 @@
 									</div>
 									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
 										<label for="num_ext_empresa">Número exterior</label>
-										<input type="tel" class="form-control validate" id="num_ext_empresa" placeholder="">
+										<input type="tel" class="form-control validate" id="num_ext_empresa" placeholder="" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
 										<span class="input-success"></span>
 										<span class="input-error"></span>
 									</div>
 									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
 										<label for="num_int_empresa">Número interior</label>
-										<input type="tel" class="form-control validate" id="num_int_empresa" placeholder="">
+										<input type="tel" class="form-control validate" id="num_int_empresa" placeholder="" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
 										<span class="input-success"></span>
 										<span class="input-error"></span>
 									</div>
@@ -943,13 +1124,13 @@
 									</div>
 									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
 										<label for="num_ext_empresa_ca">Número exterior</label>
-										<input type="tel" class="form-control validate" id="num_ext_empresa_ca" placeholder="">
+										<input type="tel" class="form-control validate" id="num_ext_empresa_ca" placeholder="" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
 										<span class="input-success"></span>
 										<span class="input-error"></span>
 									</div>
 									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
 										<label for="num_int_empresa_ca">Número interior</label>
-										<input type="tel" class="form-control validate" id="num_int_empresa_ca" placeholder="">
+										<input type="tel" class="form-control validate" id="num_int_empresa_ca" placeholder="" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
 										<span class="input-success"></span>
 										<span class="input-error"></span>
 									</div>
@@ -958,7 +1139,7 @@
 								<div class="row">
 									<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
 										<label for="cp_empresa_ca">Código Postal</label>
-										<input type="tel" class="form-control validate" id="cp_empresa_ca" placeholder="">
+										<input type="tel" class="form-control validate" id="cp_empresa_ca" placeholder="" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
 										<span class="input-success"></span>
 										<span class="input-error"></span>
 									</div>
@@ -992,14 +1173,14 @@
 						</div>
 					</div>
 				</div>
-			</div>
-		</form>
-
-
-
-
-
 		</div>
+
+
+
+
+
+
+	</div>
 
 	</div>
 
@@ -1039,17 +1220,21 @@
 	</div>
 
 	<script src="libs/jquery.js"></script>
-  <script src="libs/bootstrap.js"></script>
-  <script src="libs/jquery.navgoco.min.js"></script>
-  <script src="libs/bootstrap-datepicker.min.js"></script>
-  <script src="libs/bootstrap-datepicker.es.min.js"></script>
-  <script src="libs/bootstrap-editable.min.js"></script>
-  <script src="libs/cleave.min.js"></script>
-  <script src="libs/cleave-phone.mx.js"></script>
-  <script src="libs/swiper.min.js"></script>
-  <script src="libs/dropzone.min.js"></script>
+	<script src="libs/bootstrap.js"></script>
+	<script src="libs/jquery.navgoco.min.js"></script>
+	<script src="libs/bootstrap-datepicker.min.js"></script>
+	<script src="libs/bootstrap-datepicker.es.min.js"></script>
+	<script src="libs/bootstrap-editable.min.js"></script>
+	<script src="libs/cleave.min.js"></script>
+	<script src="libs/cleave-phone.mx.js"></script>
+	<script src="libs/swiper.min.js"></script>
+	<script src="libs/dropzone.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/es.js"></script>
+	<script src="libs/combodate.js"></script>
 
 	<script src="js/index.js"></script>
+	<script src="js/solicitud.js"></script>
 
 </body>
 
