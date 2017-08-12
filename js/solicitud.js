@@ -1,5 +1,8 @@
 var valid = true;
-
+var isMobile = false;
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ isMobile = true;
+}
 // if($(document).width() < 767/*pixels*/){
 //             // Not a phone nor a tablet
 //     $("a.collapsed").attr("data-toggle", ""); // does not collapse
@@ -8,12 +11,18 @@ var valid = true;
 var step = 'datos-personales';
 $('.nav-btn').on('click', function(e) {
   e.preventDefault()
+  if(isMobile){
 
-  $(this).closest('.collapse').collapse('hide')
-  $(this).closest('.panel').hide()
-  step = $(this).closest('.panel').next().find('.collapse').attr('id')
-  $(this).closest('.panel').next().show()
-  $(this).closest('.panel').next().find('.collapse').collapse('show')
+    $(this).closest('.collapse').collapse('hide')
+    $(this).closest('.panel').hide()
+    step = $(this).closest('.panel').next().find('.collapse').attr('id')
+    console.log(step)
+    $(this).closest('.panel').next().show()
+    $(this).closest('.panel').next().find('.collapse').collapse('show')
+  }else{
+    $(this).closest('.collapse').collapse('hide')
+    $(this).closest('.panel').next().find('.collapse').collapse('show')
+  }
 
 })
 
@@ -25,7 +34,10 @@ $('.nav-btn-back').on('click', function(e) {
     $('#'+step).collapse('hide')
     $('#'+step).closest('.panel').hide()
     $('#'+step).closest('.panel').prev().show()
+    var newStep = $('#'+step).closest('.panel').prev().find('.collapse').attr('id')
     $('#'+step).closest('.panel').prev().find('.collapse').collapse('show')
+    step = newStep
+    console.log(step)
   }
 
 })
