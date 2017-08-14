@@ -381,6 +381,21 @@ select.form-control {
 .btn-grey {
   background-color: #ddd; }
 
+a {
+  border: 0;
+  -webkit-appearance: none;
+  color: #ddd; }
+
+a:focus,
+a:hover {
+  color: transparent;
+  -webkit-appearance: none;
+  text-decoration: none; }
+
+a:focus .doc-info,
+a:hover .doc-info {
+  border: 1px solid #42b2cc; }
+
 .panel-heading a {
   display: none; }
 
@@ -476,6 +491,26 @@ a[aria-expanded="false"] + span {
 .dummy-document i {
   color: white;
   padding: 40%; }
+
+.doc-info {
+  padding: 20px 0px 3px 0;
+  box-shadow: 0 2px 5px 0;
+  margin: 12px 0;
+  text-align: center;
+  background-color: #fff; }
+
+.doc-info i {
+  color: #ea5455; }
+
+.doc-name {
+  font-weight: 600;
+  margin: 14px 0 0 0;
+  color: #42b2cc; }
+
+.doc-date {
+  font-size: 12px;
+  font-style: italic;
+  color: #ddd; }
 
 .swiper-container {
   width: 100%;
