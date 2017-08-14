@@ -188,3 +188,15 @@ var historialSaldosChart = new Chart(historialSaldos, {
     }]
   }
 });
+
+var pdfPreview = document.getElementById('pdfPreview');
+
+PDFObject.embed("http://www.pdf995.com/samples/pdf.pdf", pdfPreview);
+
+var docsLinks = document.querySelectorAll('.doc-link')
+
+docsLinks.forEach(link => link.addEventListener('click', function(e){
+  e.preventDefault()
+  console.log(link, link.href);
+  PDFObject.embed(link.href, pdfPreview)
+}))
