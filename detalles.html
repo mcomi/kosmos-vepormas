@@ -1,0 +1,487 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Static website boilerplate using webpack and bootstrap">
+	<meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1, maximum-scale=1">
+
+	<title>BX+ - Detalles solicitud</title>
+
+	<!-- Disable tap highlight on IE -->
+	<meta name="msapplication-tap-highlight" content="no">
+
+	<!-- Web Application Manifest -->
+	<link rel="manifest" href="manifest.json">
+
+	<!-- Add to homescreen for Chrome on Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="Static Website Boilerplate">
+	<link rel="icon" sizes="192x192" href="/img/chrome-touch-icon-192x192.png">
+
+	<!-- Add to homescreen for Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Static Website Boilerplate">
+	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.1.1/min/dropzone.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="css/style.css">
+
+	<!-- Tile icon for Win8 (144x144 + tile color) -->
+	<meta name="msapplication-TileImage" content="/img/ms-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#263238">
+
+	<!-- Color the status bar on mobile devices -->
+	<meta name="theme-color" content="#263238">
+
+</head>
+
+<body>
+	<div class="mobile-wrapper"></div>
+
+	<nav>
+		<div class="floating-icon">
+			<span class="open-menu">
+				<i class="fa fa-sort-up"></i>
+			</span>
+		</div>
+		<span class="open-menu">
+			<i class="fa fa-sort-up"></i>
+		</span>
+		<div class="sidebar-header">
+			<span class="text-right"><a href="#" id="nav-close">X</a></span>
+			<div class="sidebar-header-logo">
+
+				<img src="img/logo.png" alt="">
+			</div>
+			<div class="sidebar-header-profilepic">
+				<img src="img/profile.jpg" alt="">
+			</div>
+			<p>Hola Laura</p>
+		</div>
+		<ul class="list-unstyled main-menu">
+
+			<!--Include your navigation here-->
+
+			<li><span class="icon"><img src="img/icons/analitycs.png" alt=""></span><a href="#">Notificaciones </a></li>
+			<li><span class="icon"><img src="img/icons/solicitud.png" alt=""></span><a href="#">Nueva solicitud </a></li>
+			<li><span class="icon"><img src="img/icons/004-smartphone.png" alt=""></span><a href="#">Folio de usuario </a></li>
+			<li><span class="icon"><img src="img/icons/home.svg" alt=""></span><a href="#">Home </a></li>
+			<li><span class="icon"><img src="img/icons/analitycs.svg" alt=""></span><a href="#">Analíticas </a></li>
+			<li><span class="icon"><img src="img/icons/requests.svg" alt=""></span><a href="#">Solicitudes </a></li>
+			<li><span class="icon"><img src="img/icons/verified.svg" alt=""></span><a href="#">Verificaciones </a></li>
+			<li><span class="icon"><img src="img/icons/settings.svg" alt=""></span><a href="#">Configuración </a></li>
+		</ul>
+	</nav>
+	<!-- <div class="navbar navbar-inverse navbar-fixed-top">
+
+
+</div> -->
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<!--Include your brand here-->
+			<a class="navbar-brand" href="#"></a>
+			<div class="navbar-header">
+				<span id="nav-expander" class="nav-expander fixed">
+	        <img src="img/icons/menu.png" alt="">
+	      </span>
+				<span class="notifications">
+						<img src="img/icons/notification.png" alt="">
+					</span>
+			</div>
+
+		</div>
+		<!-- /.container-fluid -->
+	</div>
+	<div id="detalles-solicitud" class="container">
+
+		<div class="row">
+
+
+
+			<div class="col-xs-12 scrollmenu">
+				<a href="#generales">Datos generales</a>
+				<a href="#capacidad">Capacidad de pago</a>
+				<a href="#historial">Historial crediticio</a>
+				<a href="#score">Score</a>
+				<a href="#documentacion">Documentación</a>
+        <a href="#vista">Vista ocular</a>
+			</div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-md-4" id="generales">
+        <div class="panel panel-border section-panel">
+          <div class="panel-heading">
+              <h3 class="panel-title">Identificación Oficial <i class="fa fa-arrows-alt" aria-hidden="true"></i></h3>
+              <div class="col-md-12">
+
+                <img src="img/ine.png" alt="" class="img-responsive">
+              </div>
+              <div class="col-md-12">
+
+                <img src="img/ine-reverso.png" alt="" class="img-responsive">
+              </div>
+          </div>
+          <div class="panel-body">
+
+          </div>
+      </div>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <h3 class="section-header">INFORMACIÓN BÁSICA</h3>
+        <p class="section-list-title">Aplicante</p>
+        <a class="section-list-item editable-item" id="nombre" href="#" data-type="text">Jorge Pérez Martínez</a>
+
+        <p class="section-list-title">Mail</p>
+        <a class="section-list-item editable-item" id="mail" href="#" data-type="email">jperez@gmail.com</a>
+        <p class="section-list-title">Fecha de nacimiento</p>
+        <!-- <a class="section-list-item editable-item" id="fecha_nac" href="#" data-type="combodate" data-value="" data-format="DD MMM YYYY" data-viewformat="DD MMM YYYY" data-template="DD MMM YYYY">12/12/1987</a> -->
+				<a href="#" id="fecha_nac" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Elige la fecha" class="section-list-item editable-item" data-original-title="" title="">18/08/1983</a>
+        <p class="section-list-title">Edad</p>
+        <a class="section-list-item editable-item" id="edad" href="#" data-type="text">28 años</a>
+        <p class="section-list-title">Estado civil</p>
+        <a class="section-list-item editable-item"id="edo_civil" href="#" data-type="select">Soltero</a>
+        <p class="section-list-title">Escolaridad</p>
+        <a class="section-list-item editable-item" id="escolaridad" href="#" data-type="text">Universitario</a>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <h3 class="section-header">DOMICILIO</h3>
+				<p class="section-list-title">Dirección</p>
+        <a class="section-list-item editable-item" id="direccion" href="#" data-type="text">Av. Orizaba</a>
+
+        <p class="section-list-title">Número exterior</p>
+        <a href="#" id="num_ext" data-type="tel" class="section-list-item editable-item">30</a>
+        <p class="section-list-title">Número interior</p>
+				<a href="#" id="num_int" data-type="tel" class="section-list-item editable-item">104</a>
+        <p class="section-list-title">Colonia</p>
+        <a class="section-list-item editable-item" id="colonia" href="#" data-type="text">Hipódromo</a>
+        <p class="section-list-title">Código Postal</p>
+        <a class="section-list-item editable-item"id="cp" href="#" data-type="tel" max-length="5">06100</a>
+        <p class="section-list-title">Estado</p>
+        <a class="section-list-item editable-item" id="estado" href="#" data-type="text">Ciudad de México</a>
+      </div>
+    </div>
+
+		<div class="row">
+			<div class="col-xs-12 col-md-4" id="generales">
+        <div class="panel panel-border section-panel">
+          <div class="panel-heading">
+              <h3 class="panel-title">Comprobante de domicilio <i class="fa fa-arrows-alt" aria-hidden="true"></i></h3>
+
+          </div>
+          <div class="panel-body">
+						<div class="dummy-document">
+							<div class="center">
+
+								<i class="fa fa-file-text-o fa-3x" aria-hidden="true"></i>
+							</div>
+
+						</div>
+          </div>
+      	</div>
+      </div>
+      <div class="col-xs-12 col-md-4">
+				<div id="referencia-a" class="col-xs-12">
+					<h3 class="section-header">REFERENCIA A</h3>
+					<p class="section-list-title">Nombre</p>
+					<a class="section-list-item editable-item" id="nombre_a" href="#" data-type="text">Joseph S.</a>
+					<p class="section-list-title">Teléfono</p>
+					<a class="section-list-item editable-item" id="tel_a" href="#" data-type="text">55 4323 4234</a>
+					<p class="section-list-title">Relación</p>
+					<a class="section-list-item editable-item" id="rel_a" href="#" data-type="text">Familiar</a>
+				</div>
+				<div id="referencia-c" class="col-xs-12">
+					<h3 class="section-header">REFERENCIA C</h3>
+					<p class="section-list-title">Nombre</p>
+					<a class="section-list-item editable-item" id="nombre_c" href="#" data-type="text">Joseph S.</a>
+					<p class="section-list-title">Teléfono</p>
+					<a class="section-list-item editable-item" id="tel_c" href="#" data-type="text">55 4323 4234</a>
+					<p class="section-list-title">Relación</p>
+					<a class="section-list-item editable-item" id="rel_c" href="#" data-type="text">Familiar</a>
+				</div>
+      </div>
+      <div class="col-xs-12 col-md-4">
+				<div id="referencia-b" class="col-xs-12">
+					<h3 class="section-header">REFERENCIA B</h3>
+					<p class="section-list-title">Nombre</p>
+					<a class="section-list-item editable-item" id="nombre_b" href="#" data-type="text">Joseph S.</a>
+					<p class="section-list-title">Teléfono</p>
+					<a class="section-list-item editable-item" id="tel_b" href="#" data-type="text">55 4323 4234</a>
+					<p class="section-list-title">Relación</p>
+					<a class="section-list-item editable-item" id="rel_b" href="#" data-type="text">Familiar</a>
+				</div>
+				<div id="contacto" class="col-xs-12">
+					<h3 class="section-header">CONTACTO</h3>
+					<p class="section-list-title">Teléfono fijo</p>
+					<a class="section-list-item editable-item" id="tel_fijo" href="#" data-type="text">63 43 43 43</a>
+
+					<p class="section-list-title">Teléfono celular</p>
+					<a class="section-list-item editable-item" id="tel_cel" href="#" data-type="text">55 5454 54353</a>
+
+				</div>
+      </div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 col-md-4" id="generales">
+        <div class="panel panel-border section-panel">
+          <div class="panel-heading">
+              <h3 class="panel-title">Comprobante de ingresos <i class="fa fa-arrows-alt" aria-hidden="true"></i></h3>
+
+          </div>
+          <div class="panel-body">
+						<div class="dummy-document">
+							<div class="center">
+
+								<i class="fa fa-money fa-3x" aria-hidden="true"></i>
+							</div>
+
+						</div>
+          </div>
+      	</div>
+      </div>
+      <div class="col-xs-12 col-md-4">
+				<div id="referencia-a" class="col-xs-12">
+					<h3 class="section-header">EMPLEO</h3>
+					<p class="section-list-title">Empresa</p>
+					<a class="section-list-item editable-item" id="empresa" href="#" data-type="text">Kosmos</a>
+					<p class="section-list-title">Puesto</p>
+					<a class="section-list-item editable-item" id="puesto" href="#" data-type="text">FrontEnd Developer</a>
+					<p class="section-list-title">Contrato</p>
+					<a class="section-list-item editable-item" id="contrato" href="#" data-type="text">Nómina</a>
+					<p class="section-list-title">Temporalidad</p>
+					<a class="section-list-item editable-item" id="temporalidad" href="#" data-type="text">Indefinido</a>
+				</div>
+				<div id="referencia-c" class="col-xs-12">
+					<h3 class="section-header">INGRESOS</h3>
+					<p class="section-list-title">Ingreso Neto</p>
+					<a class="section-list-item editable-item" id="ingreso_neto" href="#" data-type="text">$12,000</a>
+					<p class="section-list-title">Total de percepción</p>
+					<a class="section-list-item editable-item" id="total_percepcion" href="#" data-type="text">$12,000</a>
+				</div>
+      </div>
+      <div class="col-xs-12 col-md-4">
+				<div id="referencia-b" class="col-xs-12">
+					<h3 class="section-header">CAPACIDAD DE PAGO</h3>
+					<p class="section-list-title">Total de Percepcion</p>
+					<a class="section-list-item editable-item" id="percepcion" href="#" data-type="text">$12,000</a>
+					<p class="section-list-title">Total de Reducción</p>
+					<a class="section-list-item editable-item" id="reduccion" href="#" data-type="text">$12,000</a>
+					<p class="section-list-title">Neto a pagar</p>
+					<a class="section-list-item editable-item" id="neto" href="#" data-type="text">$12,000</a>
+					<p class="section-list-title">NSS</p>
+					<a class="section-list-item editable-item" id="nss" href="#" data-type="text">$12,000</a>
+				</div>
+
+      </div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 col-md-6">
+				<h3 id="capacidad" class="section-header">Ingresos VS Pagos</h3>
+				<div class="panel panel-border section-panel">
+					<div class="panel-body">
+						<canvas id="ingresoVsPagos" height="150"></canvas>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<h3 id="historial" class="section-header">Historial de Saldos</h3>
+				<div class="panel panel-border section-panel">
+					<div class="panel-body">
+						<canvas id="saldos" height="150"></canvas>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<h3 class="section-header">% de MOP</h3>
+				<div class="panel panel-border section-panel">
+					<div class="panel-body">
+						<canvas id="mop" height="150"></canvas>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 col-md-4" id="generales">
+        <div class="panel panel-border section-panel">
+          <div class="panel-heading">
+              <h3 class="panel-title">Historial de Crédito <i class="fa fa-arrows-alt" aria-hidden="true"></i></h3>
+
+          </div>
+          <div class="panel-body">
+						<div class="dummy-document">
+							<div class="center">
+
+								<i class="fa fa-credit-card fa-3x" aria-hidden="true"></i>
+							</div>
+
+						</div>
+          </div>
+      	</div>
+      </div>
+      <div class="col-xs-12 col-md-4">
+					<h3 class="section-header">HISTORIAL CREDITICIO</h3>
+					<p class="section-list-title">Score</p>
+					<span class="section-list-item editable-item" id="score" href="#" data-type="text">0000000</span>
+					<p class="section-list-title">MOP más alto</p>
+					<span class="section-list-item editable-item" id="mop_alto" href="#" data-type="text">0000000</span>
+					<p class="section-list-title">Destino</p>
+					<span class="section-list-item editable-item" id="destino" href="#" data-type="text">0000000</span>
+					<p class="section-list-title">Juicios AP</p>
+					<span class="section-list-item editable-item" id="juicios_ap" href="#" data-type="text">0000000</span>
+					<p class="section-list-title">Saldo Actual</p>
+					<span class="section-list-item editable-item" id="saldo_actual" href="#" data-type="text">0000000</span>
+					<p class="section-list-title">Saldo vencido</p>
+					<span class="section-list-item editable-item" id="saldo_vencido" href="#" data-type="text">0000000</span>
+      </div>
+      <div class="col-xs-12 col-md-4">
+					<h3 class="section-header">HISTORIAL CREDITICIO</h3>
+					<p class="section-list-title">Fecha de último atraso</p>
+					<span class="section-list-item editable-item" id="score" href="#" data-type="text">0000000</span>
+					<p class="section-list-title">Monto del último atraso</p>
+					<span class="section-list-item editable-item" id="mop_alto" href="#" data-type="text">0000000</span>
+					<p class="section-list-title">Pago a realizar</p>
+					<span class="section-list-item editable-item" id="destino" href="#" data-type="text">0000000</span>
+					<p class="section-list-title">Crédito más alto</p>
+					<span class="section-list-item editable-item" id="juicios_ap" href="#" data-type="text">0000000</span>
+					<p class="section-list-title">Cuentas AP</p>
+					<span class="section-list-item editable-item" id="saldo_actual" href="#" data-type="text">0000000</span>
+					<p class="section-list-title">Consultas</p>
+					<span class="section-list-item editable-item" id="saldo_vencido" href="#" data-type="text">0000000</span>
+      </div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 col-md-6">
+				<h3 id="capacidad" class="section-header">Desglose en Préstamos</h3>
+				<div class="panel panel-border section-panel">
+					<div class="panel-body">
+						<canvas id="desglosePrestamosChart" height="150"></canvas>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<h3 id="historial" class="section-header">% en MOP</h3>
+				<div class="panel panel-border section-panel">
+					<div class="panel-body">
+						<canvas id="porcentajeMOB" height="150"></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 col-md-6">
+				<h3 class="section-header">Ingresos VS. Pagos en Buró</h3>
+				<div class="panel panel-border section-panel">
+					<div class="panel-body">
+						<canvas id="ingresoVsPagosBuro" height="150"></canvas>
+					</div>
+
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<h3 class="section-header">Historial de Saldos</h3>
+				<div class="panel panel-border section-panel">
+					<div class="panel-body">
+						<canvas id="historialSaldos" height="150"></canvas>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 col-md-6">
+				<h3  id="documentacion" class="section-header">Verificación</h3>
+
+				<p class="verify-list">Verificación de identidad<i class="fa fa-check-circle" aria-hidden="true"></i></p>
+				<p class="verify-list">Verificación de domicilio<i class="fa fa-check-circle" aria-hidden="true"></i></p>
+				<p class="verify-list">Capacidad de Pago<i class="fa fa-check-circle" aria-hidden="true"></i></p>
+				<p class="verify-list">Historial de Crédito<i class="fa fa-check-circle" aria-hidden="true"></i></p>
+				<p class="verify-list">Sin Alertas de Fraude<i class="fa fa-check-circle" aria-hidden="true"></i></p>
+				<p class="verify-list">Referencias<i class="fa fa-times-circle" aria-hidden="true"></i></p>
+
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<div class="center padding-btns">
+
+					<button href="#" class="btn btn-form btns-section">Autorizar</button>
+				</div>
+				<div class="center padding-btns">
+
+					<buttton href="#" class="btn btn-form btns-section btn-blue-outline">Solicitar visita</button>
+				</div>
+				<div class="center padding-btns">
+
+					<buttton href="# padding-btns" class="btn btn-form btns-section btn-grey">Solicitar complemento</button>
+				</div>
+				<div class="center padding-btns">
+
+					<buttton href="#" class="btn btn-form btns-section btn-red-outline">Rechazar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+
+
+		<div class="icon-menu">
+			<img src="img/icons/house.png" alt="">
+		</div>
+
+
+		<div class="icon-menu">
+			<img src="img/icons/analitycs.png" alt="">
+		</div>
+
+		<div class="icon-menu">
+			<img src="img/icons/new-request.png" alt="">
+		</div>
+
+
+
+		<div class="icon-menu">
+			<img src="img/icons/attach.png" alt="">
+		</div>
+
+
+
+		<div class="icon-menu">
+			<img src="img/icons/checklist.png" alt="">
+		</div>
+	</div>
+
+  <script src="libs/jquery.js"></script>
+  <script src="libs/bootstrap.js"></script>
+  <script src="libs/jquery.navgoco.min.js"></script>
+  <script src="libs/bootstrap-datepicker.min.js"></script>
+  <script src="libs/bootstrap-datepicker.es.min.js"></script>
+  <script src="libs/bootstrap-editable.min.js"></script>
+  <script src="libs/cleave.min.js"></script>
+  <script src="libs/cleave-phone.mx.js"></script>
+  <script src="libs/swiper.min.js"></script>
+  <script src="libs/dropzone.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/es.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+
+  <script src="js/detalles.js"></script>
+
+
+</body>
+
+</html>

@@ -21,6 +21,11 @@ h3.section-header {
   padding-bottom: 15px;
   border-bottom: 1px solid #c5cc24; }
 
+h3.section-header-home {
+  font-size: 20px;
+  padding: 15px;
+  border-left: 1px solid #c5cc24; }
+
 .section-list-title {
   font-size: 12px;
   color: #2B3B46;
@@ -215,6 +220,9 @@ body.nav-expanded {
   height: 25px;
   padding-right: 15px; }
 
+a:hover .icon-item {
+  border: 1px solid #42b2cc; }
+
 .icon-item {
   box-shadow: 0px 2px 3px #e8e8e8;
   border-radius: 5px;
@@ -354,6 +362,25 @@ select.form-control {
   background-color: #42b2cc;
   padding: 2px 43px; }
 
+.btns-section {
+  width: 50%; }
+
+.padding-btns {
+  padding: 15px; }
+
+.btn-blue-outline {
+  background: #fff;
+  color: #42b2cc;
+  border: 1px solid #42b2cc; }
+
+.btn-red-outline {
+  background: #fff;
+  color: #ea5455;
+  border: 1px solid #ea5455; }
+
+.btn-grey {
+  background-color: #ddd; }
+
 .panel-heading a {
   display: none; }
 
@@ -370,7 +397,7 @@ select.form-control {
 
 .panel.section-panel {
   margin-top: 20px;
-  background-color: rgba(0, 0, 0, 0.02);
+  background-color: #fff;
   box-shadow: 0 4px 9px 0;
   border-radius: 16px; }
 
@@ -383,6 +410,72 @@ span.mobile-only {
 
 a[aria-expanded="false"] + span {
   display: none; }
+
+.swiper-slide .panel {
+  background: #fff; }
+
+.swiper-slide .panel p {
+  margin: 7px 0 0 0; }
+
+.credit-proposals-wrapper .panel .panel-header span {
+  display: block;
+  margin: 8px 0; }
+
+.credit-proposals-wrapper img {
+  width: 13%; }
+
+.credit-proposals-wrapper .panel {
+  border-radius: 18px; }
+
+.credit-proposals-wrapper .panel .panel-header {
+  border-radius: 15px;
+  color: #fff;
+  text-align: center;
+  background-color: #333;
+  padding: 15px; }
+
+#credit-proposals ul {
+  list-style-type: none; }
+
+.credit-proposals-wrapper .panel.active .panel-header {
+  background-color: #42b2cc; }
+
+.credit-proposals-wrapper .panel.panel-red .panel-header {
+  background-color: #ea5455; }
+
+.credit-proposals-wrapper .panel.panel-green .panel-header {
+  background-color: #c5cc24; }
+
+.credit-proposals-wrapper .panel.panel-dark .panel-header {
+  background-color: #303E47; }
+
+.credit-proposals-wrapper .panel .panel-body .list-title {
+  font-weight: 800;
+  font-size: 16px; }
+
+.credit-proposals-wrapper .panel .panel-body .list-item {
+  color: #42b2cc;
+  font-weight: 500;
+  line-height: 20px; }
+
+.credit-proposals-wrapper .panel .panel-body .list-item-percentage {
+  display: block; }
+
+.home .panel-heading {
+  border-bottom: 1px solid #ddd; }
+
+.home .panel-heading a {
+  float: right;
+  color: #42b2cc; }
+
+.dummy-document {
+  height: 300px;
+  background-color: #ddd;
+  border-radius: 8px; }
+
+.dummy-document i {
+  color: white;
+  padding: 40%; }
 
 .swiper-container {
   width: 100%;
@@ -500,6 +593,22 @@ a[aria-expanded="false"] + span {
   .verify-list .fa-times-circle {
     color: #ea5455; }
 
+.table > thead > tr > th {
+  vertical-align: bottom;
+  color: #9B9B9B;
+  border: 0;
+  font-size: 14px;
+  padding: 0 0 8px 8px; }
+
+.table > tbody > tr > td {
+  border: 0;
+  font-size: 14px;
+  color: #2B3B46;
+  padding: 0 0 10px 8px; }
+
+td a {
+  color: #42b2cc; }
+
 body {
   background-color: #fff;
   font-family: 'Raleway', sans-serif;
@@ -581,43 +690,6 @@ body {
 .credit-proposals-wrapper {
   padding-top: 25px; }
 
-.credit-proposals-wrapper .panel .panel-header span {
-  display: block;
-  margin: 8px 0; }
-
-.credit-proposals-wrapper img {
-  width: 13%; }
-
-.credit-proposals-wrapper .panel {
-  border-radius: 18px; }
-
-.credit-proposals-wrapper .panel .panel-header {
-  border-radius: 15px;
-  color: #fff;
-  text-align: center;
-  background-color: #333;
-  padding: 15px; }
-
-#credit-proposals ul {
-  list-style-type: none; }
-
-.credit-proposals-wrapper .panel.active .panel-header {
-  background-color: #42b2cc; }
-
-.credit-proposals-wrapper .panel.panel-red .panel-header {
-  background-color: #ea5455; }
-
-.credit-proposals-wrapper .panel.panel-green .panel-header {
-  background-color: #c5cc24; }
-
-.credit-proposals-wrapper .panel .panel-body .list-title {
-  font-weight: 800;
-  font-size: 16px; }
-
-.credit-proposals-wrapper .panel .panel-body .list-item {
-  color: #42b2cc;
-  font-weight: 500; }
-
 #pre-autorizacion p {
   margin: 32px 0; }
 
@@ -680,7 +752,6 @@ body {
     display: block; }
   .panel.section-panel {
     margin-top: 20px;
-    background-color: rgba(0, 0, 0, 0.02);
     box-shadow: 0 4px 9px 0;
     border-radius: 16px; }
   .panel.section-panel img {
@@ -760,7 +831,7 @@ body {
             justify-content: space-between; }
   .main-menu li a {
     display: none; }
-  .nav-link {
+  .nav-btn-back {
     display: none; }
   span.icon {
     display: block;
@@ -812,6 +883,8 @@ body {
   .code-input {
     font-size: 48px;
     width: 64px;
-    height: 64px; } }
+    height: 64px; }
+  .chart-row {
+    padding-top: 40px; } }
 
 /*# sourceMappingURL=style.css.map */

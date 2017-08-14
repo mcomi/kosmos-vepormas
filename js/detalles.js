@@ -25,12 +25,35 @@ $(function() {
   $('#num_int').editable()
   $('#colonia').editable()
   $('#cp').editable()
-  $('#escolaridad').editable()
+  $('#estado').editable()
+
+  $('#nombre_a').editable()
+  $('#tel_a').editable()
+  $('#rel_a').editable()
+  $('#nombre_c').editable()
+  $('#tel_c').editable()
+  $('#rel_c').editable()
+  $('#nombre_b').editable()
+  $('#tel_b').editable()
+  $('#rel_b').editable()
+  $('#tel_fijo').editable()
+  $('#tel_cel').editable()
+
+  $('#empresa').editable()
+  $('#puesto').editable()
+  $('#contrato').editable()
+  $('#temporalidad').editable()
+  $('#ingreso_neto').editable()
+  $('#total_percepcion').editable()
+  $('#percepcion').editable()
+  $('#reduccion').editable()
+  $('#neto').editable()
+  $('#nss').editable()
 });
 
 
-var ctx = document.getElementById("myChart");
-var myChart = new Chart(ctx, {
+var ingresoVsPagos = document.getElementById("ingresoVsPagos");
+var myChart = new Chart(ingresoVsPagos, {
     type: 'bar',
     data: {
 
@@ -56,9 +79,66 @@ var myChart = new Chart(ctx, {
 });
 
 
+var saldos = document.getElementById("saldos").getContext("2d");
+var chartSaldos = new Chart(saldos, {
+  type: 'doughnut',
+  data: {
+      labels: ['data a', 'data b', 'data c'],
+      datasets: [{
 
-var donutEl = document.getElementById("donut").getContext("2d");
-var donut = new Chart(donutEl, {
+          data: [300, 50, 100],
+          backgroundColor: [
+              '#2C82BE',
+              '#DBECF8',
+              '#76DDFB'
+
+          ]
+
+      }]
+  },
+})
+
+var mop = document.getElementById("mop").getContext("2d");
+var chartMop = new Chart(mop, {
+  type: 'doughnut',
+  data: {
+      labels: ['data a', 'data b', 'data c'],
+      datasets: [{
+
+          data: [300, 50, 100],
+          backgroundColor: [
+              '#2C82BE',
+              '#DBECF8',
+              '#76DDFB'
+
+          ]
+
+      }]
+  },
+})
+
+
+var desglosePrestamosChart = document.getElementById("desglosePrestamosChart").getContext("2d");
+var chartDesglosePrestamosChart = new Chart(desglosePrestamosChart, {
+  type: 'doughnut',
+  data: {
+      labels: ['data a', 'data b', 'data c'],
+      datasets: [{
+
+          data: [300, 50, 100],
+          backgroundColor: [
+              '#2C82BE',
+              '#DBECF8',
+              '#76DDFB'
+
+          ]
+
+      }]
+  },
+})
+
+var porcentajeMOB = document.getElementById("porcentajeMOB").getContext("2d");
+var chartporcentajeMOB = new Chart(porcentajeMOB, {
   type: 'doughnut',
   data: {
       labels: ['data a', 'data b', 'data c'],
@@ -78,59 +158,33 @@ var donut = new Chart(donutEl, {
 
 
 
-var popCanvas = document.getElementById("bubble");
 
-var popData = {
-  datasets: [{
-    label: ['Ingresos'],
-    data: [{
-      x: 100,
-      y: 0,
-      r: 10
+var ingresoVsPagosBuro = document.getElementById('ingresoVsPagosBuro').getContext('2d');
+var ingresoVsPagosChart = new Chart(ingresoVsPagosBuro, {
+  type: 'line',
+  data: {
+    labels: ['1', '2', '3', '4'],
+    datasets: [{
+      data: [250000, 300000, 240000, 400000],
+      backgroundColor: "rgba(255,255,255,0.6)"
     }, {
-      x: 60,
-      y: 30,
-      r: 8
-    }, {
-      x: 40,
-      y: 60,
-      r: 15
-    }, {
-      x: 80,
-      y: 80,
-      r: 10
-    }, {
-      x: 20,
-      y: 30,
-      r: 5
-    }, {
-      x: 0,
-      y: 100,
-      r: 5
-    },{
-      x: 30,
-      y: 50,
-      r: 5
-    },
-    {
-      x: 20,
-      y: 70,
-      r: 6
-    },
-    {
-      x: 60,
-      y: 80,
-      r: 15
-    }],
-    backgroundColor: "#2C82BE",
-    hoverBackgroundColor: "#000000",
-    hoverBorderColor: "#2C82BE",
-    hoverBorderWidth: 5,
-    hoverRadius: 5
-  }]
-};
+      data: [270000, 230000, 300000, 290000],
+      backgroundColor: "rgba(255,245,246,0.6)"
+    }]
+  }
+});
 
-var bubbleChart = new Chart(popCanvas, {
-  type: 'bubble',
-  data: popData
+var historialSaldos = document.getElementById('historialSaldos').getContext('2d');
+var historialSaldosChart = new Chart(historialSaldos, {
+  type: 'line',
+  data: {
+    labels: ['1', '2', '3', '4'],
+    datasets: [{
+      data: [250000, 300000, 240000, 400000],
+      backgroundColor: "rgba(255,255,255,0.6)"
+    }, {
+      data: [270000, 230000, 300000, 290000],
+      backgroundColor: "rgba(255,245,246,0.6)"
+    }]
+  }
 });
