@@ -1,14 +1,6 @@
-
-
 $(function() {
-
   $.fn.editable.defaults.mode = 'inline';
-  $('#username').editable();
 });
-
-$('#fecha_nac').combodate();
-$('#fecha_nac_ca').combodate();
-
 var inputsText = document.querySelectorAll('input')
 
 inputsText.forEach(input => input.addEventListener('change', function() {

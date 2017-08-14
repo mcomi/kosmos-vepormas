@@ -62,6 +62,17 @@ h3.section-header-home {
   text-transform: uppercase;
   box-shadow: 0px 2px 3px #e8e8e8; }
 
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+  z-index: 3;
+  color: #fff;
+  cursor: default;
+  background-color: #42b2cc;
+  border-color: #42b2cc; }
+
+.pagination > li > a, .pagination > li > span {
+  color: #42b2cc;
+  border: 1px solid #ddd; }
+
 .scrollmenu a {
   display: inline-block;
   color: #6c767c;
@@ -357,6 +368,15 @@ select.form-control {
   border: 0;
   box-shadow: 0px 3px 4px #e8e8e8; }
 
+.filter-bar .form-group span {
+  display: inline-block; }
+
+.form-inline .form-group {
+  vertical-align: inherit; }
+
+.date-search {
+  margin: 0 20px; }
+
 .btn-form {
   color: white;
   background-color: #42b2cc;
@@ -395,6 +415,25 @@ a:hover {
 a:focus .doc-info,
 a:hover .doc-info {
   border: 1px solid #42b2cc; }
+
+.btn .caret {
+  margin-left: 0;
+  margin-top: 7px; }
+
+.btn-group {
+  margin: 10px 10px; }
+
+.btn-group .btn-default {
+  border: 0; }
+
+.btn-group .btn-default:hover {
+  color: #42b2cc;
+  background-color: #fff; }
+
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open > .dropdown-toggle.btn-default.focus, .open > .dropdown-toggle.btn-default:focus, .open > .dropdown-toggle.btn-default:hover {
+  color: #ea5455;
+  background-color: #fff;
+  border: 0; }
 
 .panel-heading a {
   display: none; }
@@ -639,10 +678,13 @@ a[aria-expanded="false"] + span {
   border: 0;
   font-size: 14px;
   color: #2B3B46;
-  padding: 0 0 10px 8px; }
+  padding: 0 0 16px 8px; }
 
 td a {
   color: #42b2cc; }
+
+.right {
+  text-align: right; }
 
 body {
   background-color: #fff;

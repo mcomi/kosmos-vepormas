@@ -1,3 +1,13 @@
+
+$(function() {
+
+  $.fn.editable.defaults.mode = 'inline';
+  $('#username').editable();
+});
+
+$('#fecha_nac').combodate();
+$('#fecha_nac_ca').combodate();
+
 $.fn.exists = function() {
   return this.length > 0;
 }
