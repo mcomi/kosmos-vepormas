@@ -6,7 +6,7 @@
 	<meta name="description" content="bx+ using webpack and bootstrap">
 	<meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1, maximum-scale=1">
 
-	<title>BX+ - Home</title>
+	<title>BX+ - Estatus de solicitud</title>
 
 	<!-- Disable tap highlight on IE -->
 	<meta name="msapplication-tap-highlight" content="no">
@@ -32,6 +32,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.1.1/min/dropzone.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="css/bootstrap-table.min.css">
   <link rel="stylesheet" href="css/style.css">
 
 	<!-- Tile icon for Win8 (144x144 + tile color) -->
@@ -85,7 +86,7 @@
 
 </div> -->
 	<div class="navbar navbar-default navbar-fixed-top">
-		<div class="container-fluid">
+    <div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<!--Include your brand here-->
 
@@ -131,146 +132,24 @@
 	</div>
 	<div class="container home">
     <div class="row">
+      <h1 class="title-section">Simulador Hipotecario</h1>
 
-      <div class="menu_credit_type col-xs-12 col-md-6">
-        <h3 class="section-header-home">NUEVA SOLICITUD</h3>
-        <div class="col-xs-3">
-					<a href="simulador.html">
-	          <div class="icon-item">
-								<img src="img/icons/house.png" alt="">
-	          </div>
-					</a>
-          <p class="credit-text">Hipoteca</p>
-        </div>
-        <div class="col-xs-3">
-					<a href="simulador.html">
-	          <div class="icon-item">
-								<img src="img/icons/car.png" alt="">
-	          </div>
-					</a>
-          <p class="credit-text">Auto</p>
-        </div>
-        <div class="col-xs-3">
-					<a href="simulador.html">
-	          <div class="icon-item">
-								<img src="img/icons/personal_credit.png" alt="">
-	          </div>
-					</a>
-          <p class="credit-text">Personal</p>
-        </div>
-        <div class="col-xs-3">
-					<a href="simulador.html">
-	          <div class="icon-item">
-								<img src="img/icons/pyme.png" alt="">
-	          </div>
-					</a>
-          <p class="credit-text">PyME</p>
-        </div>
-      </div>
 
-      <div class="col-xs-12 col-md-6">
-        <h3 class="section-header-home">CONSULTA DE ESTATUS</h3>
-        <div class="form-group padding-dekstop-col">
-          <label for="folio_usuario">Folio de usuario</label>
-          <input type="tel" class="form-control validate" id="folio_usuario">
-          <span class="input-success"></span>
-          <span class="input-error"></span>
-        </div>
-        <div>
-          <a href="estatus.html" class="btn btn-form nav-btn">Ingresar</a>
-        </div>
-      </div>
-    </div>
+			<div class="col-xs-12 center">
+				<h5 class="status">Status</h5>
+        <p>Los documentos fueron rechazados</p>
+        <span>"La calidad de imagen no es legible"</span>
+        <div class="center padding-btns">
 
-    <div class="row chart-row">
-			<div class="col-xs-12 col-md-6">
-				<div class="panel panel-border section-panel">
-					<div class="panel-heading">
-            VOLUMEN <a href="#">Ver más</a>
-          </div>
-					<div class="panel-body">
-						<canvas id="lineChart2" height="150"></canvas>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-md-6">
-				<div class="panel panel-border section-panel">
-          <div class="panel-heading">
-            VOLUMEN <a href="#">Ver más</a>
-          </div>
-					<div class="panel-body">
-						<canvas id="lineChart" height="150"></canvas>
-					</div>
-				</div>
+          <button class="btn btn-form">Enviar</button>
+        </div>
+        <div class="center padding-btns">
+
+          <a href="# padding-btns" class="btn btn-form btn-grey">Volver al inicio</a>
+        </div>
 			</div>
     </div>
 
-		<div class="row">
-			<div class="col-xs-12">
-
-				<div class="panel panel-border section-panel">
-					<div class="panel-heading">
-						Solicitudes <a href="solicitudes.html">Ver todas</a>
-					</div>
-					<div class="panel-body table-responsive">
-						<table class="table table-striped">
-							<thead>
-								<tr>
-									<th>Folio</th>
-									<th>Cliente</th>
-									<th>Estatus</th>
-									<th>POV</th>
-									<th>Fuente</th>
-									<th>Producto</th>
-									<th>Fecha</th>
-									<th>Monto</th>
-									<th></th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>0021</td>
-									<td>Mariana Flores Romero</td>
-									<td>En proceso</td>
-									<td>Cuajimalpa</td>
-									<td>Google</td>
-									<td>CS</td>
-									<td>01/07/2017</td>
-									<td>$20,000</td>
-									<td><a href="detalles.html">Ver detalle</a></td>
-								</tr>
-							</tbody>
-							<thead>
-								<tr>
-									<th>Folio</th>
-									<th>Cliente</th>
-									<th>Estatus</th>
-									<th>POV</th>
-									<th>Fuente</th>
-									<th>Producto</th>
-									<th>Fecha</th>
-									<th>Monto</th>
-									<th></th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>0021</td>
-									<td>Mariana Flores Romero</td>
-									<td>En proceso</td>
-									<td>Cuajimalpa</td>
-									<td>Google</td>
-									<td>CS</td>
-									<td>01/07/2017</td>
-									<td>$20,000</td>
-									<td><a href="detalles.html">Ver detalle</a></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
 
 	<div class="footer">
@@ -308,6 +187,7 @@
   <script src="libs/bootstrap-datepicker.min.js"></script>
   <script src="libs/bootstrap-datepicker.es.min.js"></script>
   <script src="libs/bootstrap-editable.min.js"></script>
+  <script src="libs/bootstrap-table.min.js"></script>
   <script src="libs/cleave.min.js"></script>
   <script src="libs/cleave-phone.mx.js"></script>
   <script src="libs/swiper.min.js"></script>
@@ -317,8 +197,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
 
   <script src="js/index.js"></script>
-	<script src="js/home.js"></script>
-
 
 </body>
 

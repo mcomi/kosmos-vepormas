@@ -38,6 +38,16 @@ h3.section-header-home {
   color: #42b2cc;
   line-height: 24px; }
 
+h3.section-header-home span {
+  font-size: 15px;
+  color: #42b2cc;
+  font-weight: 700; }
+
+h5.status {
+  margin: 45px 0 70px 0;
+  text-decoration: underline;
+  font-weight: 800; }
+
 .navbar {
   background: #303E47;
   border: 1px solid #303E47;
@@ -677,8 +687,7 @@ a[aria-expanded="false"] + span {
 .table > tbody > tr > td {
   border: 0;
   font-size: 14px;
-  color: #2B3B46;
-  padding: 0 0 16px 8px; }
+  color: #2B3B46; }
 
 td a {
   color: #42b2cc; }
