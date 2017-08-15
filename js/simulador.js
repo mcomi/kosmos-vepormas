@@ -254,13 +254,21 @@ function NumeroALetras(num) {
       saldo_subcuenta.addEventListener('change',validetInfonavitInpus)
       pago_fijo_infonavit.addEventListener('change',validetInfonavitInpus)
       gastos_infonavit.addEventListener('change',validetInfonavitInpus)
+      plazo.addEventListener('change',validetInfonavitInpus)
 
   		// inicilizo los eventos para escoger que tipo de credito infonavit
   		const tiposInfonavit = document.querySelectorAll('.menu_credit_type input[type="radio"]');
       let tipoActivo = null;
   		tiposInfonavit.forEach(tipo => tipo.addEventListener('click', function () {
-        $('#infonavitCredits')[0].reset()
-        $('#infonavitCredits .input-success').html('')
+        valorInmueble.value = ''
+        montoCredito.value = ''
+        monto_credito.value = ''
+        saldo_subcuenta.value = ''
+        pago_fijo_infonavit.value = ''
+        gastos_infonavit.value = ''
+        plazo.value = '10 años'
+        $('.input-success').html('')
+        divPropuestas.innerHTML = ''
   			if(tipo.value==='apoyo-infonavit'){
           tipoActivo = tipo.value
           if($('.info-cofi').hasClass('hidden')) $('.info-cofi').removeClass('hidden');
@@ -280,7 +288,7 @@ function NumeroALetras(num) {
           if(tipoActivo==='apoyo-infonavit'){
             if(valorInmueble.value != '' && monto_credito.value != ''){
               console.log('calculo propuesta infonavit');
-              var datos = {}
+              const datos = {}
               datos.valor_inmueble = valorInmueble.value
               datos.monto_credito = monto_credito.value
               datos.plazo = plazo.value
@@ -291,7 +299,15 @@ function NumeroALetras(num) {
             if(valorInmueble.value != '' && montoCredito.value != ''
               && saldo_subcuenta.value!= '' && pago_fijo_infonavit.value != ''
                 && gastos_infonavit.value != ''){
-                  console.log('calculo propuesta cofinavit');
+                  const datos = {
+                    'valor': valorInmueble.value,
+                    'monto': montoCredito.value,
+                    'saldo_subcuenta': saldo_subcuenta.value,
+                    'pago_fijo_infonavit': pago_fijo_infonavit.value,
+                    'gastos_infonavit': gastos_infonavit.value,
+                    'plazo': plazo.value
+                  }
+                  calculoYMuestroPropuestasCofinavit(datos)
             }
           }
       }
@@ -547,41 +563,54 @@ function NumeroALetras(num) {
     		this.comision_apertura_cantidad + this.gastos_notariales + this.avaluo;
         this.ingreso_mensual_requerido = (this.pago_fijo_mensual_mejora+this.pago_fijo_mensual_liquidez)/0.3
     	}
-      function PropuestaCofinavit(valor, monto, plazo, tasa_anual, comision_apertura_porcentaje, comision_admin, avaluo, tasa_anual_liquidez, saldo_subcuenta, pago_fijo_infonavit, gastos_infonavit) {
-      		this.valor = parseFloat(valor.replace(/,/g, ''));
-      		this.monto = parseFloat(monto.replace(/,/g, ''));
-          this.saldo_restante = saldo_restante
-          this.aforo_maximo
-          this.spread_aforo
-          this.monto_maximo
-          this.monto_solicitado
-          this.aforo_total
-          this.saldo_subcuenta = saldo_subcuenta === undefined ? 0 : parseFloat(saldo_subcuenta.replace(/,/g, ''))
-          this.pago_fijo_infonavit = pago_fijo_infonavit === undefined ? 0 : parseFloat(pago_fijo_infonavit.replace(/,/g, ''));
-          this.gastos_infonavit = gastos_infonavit === undefined ? 0 : parseFloat(gastos_infonavit.replace(/,/g, ''));
+
+      function calculoYMuestroPropuestasCofinavit (datos) {
+
+        	const tasaA = objTasas.tasaA;
+        	const tasaB = objTasas.tasaB;
+        	const tasaC = objTasas.tasaC;
+
+        	const propuestaA = new PropuestaCofinavit(datos.valor, datos.monto, datos.plazo, datos.saldo_subcuenta,
+            datos.pago_fijo_infonavit, datos.gastos_infonavit,
+            tasaA.tasa_anual, tasaA.comision_apertura_porcentaje, tasaA.comision_admin, tasaA.avaluo,)
+        	const propuestaB = new PropuestaCofinavit(datos.valor, datos.monto, datos.plazo, datos.saldo_subcuenta,
+            datos.pago_fijo_infonavit, datos.gastos_infonavit,
+            tasaB.tasa_anual, tasaB.comision_apertura_porcentaje, tasaB.comision_admin, tasaB.avaluo,)
+        	const propuestaC = new PropuestaCofinavit(datos.valor, datos.monto, datos.plazo, datos.saldo_subcuenta,
+            datos.pago_fijo_infonavit, datos.gastos_infonavit,
+            tasaC.tasa_anual, tasaC.comision_apertura_porcentaje, tasaC.comision_admin, tasaC.avaluo,)
+
+        	divPropuestas.innerHTML = propuestasCofinavit(propuestaA, propuestaB, propuestaC)
+        }
+
+      function PropuestaCofinavit(valor, monto, plazo, saldo_subcuenta, pago_fijo_infonavit, gastos_infonavit,
+        tasa_anual, comision_apertura_porcentaje, comision_admin, avaluo) {
+      		this.valor = typeof(valor) === 'string' ? parseFloat(valor.replace(/,/g, '')) : valor
+      		this.monto = typeof(monto) === 'string' ? parseFloat(monto.replace(/,/g, '')) : monto
+          this.saldo_subcuenta = typeof(saldo_subcuenta) === 'string' ? parseFloat(saldo_subcuenta.replace(/,/g, '')) : saldo_subcuenta
+          this.pago_fijo_infonavit = typeof(pago_fijo_infonavit) === 'string' ? parseFloat(pago_fijo_infonavit.replace(/,/g, '')) : pago_fijo_infonavit
+          this.gastos_infonavit = typeof(gastos_infonavit) === 'string' ? parseFloat(gastos_infonavit.replace(/,/g, '')) : gastos_infonavit
       		this.plazo = plazo.match(/[0-9]+/g)[0]
-      		this.tasa_anual_mejora = tasa_anual;
-          this.tasa_anual_liquidez = tasa_anual_liquidez === undefined ? 0 : tasa_anual_liquidez;
+          this.tasa_anual = tasa_anual
       		this.comision_apertura_porcentaje = comision_apertura_porcentaje;
+          this.monto_infonavit = 100000
+          this.monto_bx = 100000
+          this.aforo = this.monto/this.valor * 100;
+          this.aforo_banco_infonavit = 90
       		this.comision_admin = comision_admin;
       		this.avaluo = avaluo
           this.enganche = this.valor - this.monto;
-      		this.aforo = this.monto/this.valor * 100;
       		this.plazo_meses = this.plazo*12;
       		//TODO tasa_anual, gastos_notariales_porcentaje, plazo_meses, monto_credito
-      		this.pago_fijo_mensual_liquidez = 10000;
-          this.seguro_vida_liquidez
-          this.pago_mensual_liquidez
-          this.pago_fijo_mensual_mejora
-
+      		this.pago_fijo_mensual = 10000;
+          this.enganche = 50000
       		this.comision_apertura_cantidad = (this.comision_apertura_porcentaje/10)*this.monto
       		this.gastos_notariales = this.monto*0.06;
+      		this.seguro_vida_mensual = this.monto * (0.27/1000);
           this.gastos_originacion = this.comision_apertura_cantidad + this.gastos_notariales + this.avaluo;
           this.desembolso_inicial = this.enganche + this.gastos_originacion;
-      		this.seguro_vida_mensual = this.monto * (0.27/1000);
       		this.seguro_danios_mensual = (this.monto*0.8)*(0.34916/1000);
-      		this.pago_mensual_total + this.seguro_vida_mensual + this.pago_fijo_mensual + this.comision_admin;
-      		this.comision_apertura_cantidad + this.gastos_notariales + this.avaluo;
+      		this.pago_mensual_total = this.seguro_vida_mensual + this.pago_fijo_mensual + this.comision_admin;
           this.ingreso_mensual_requerido = this.pago_fijo_mensual/0.3
       	}
 
@@ -681,7 +710,6 @@ function NumeroALetras(num) {
 				</div>
 			</div>
 		</div>
-    <form action="#" method="post" id="infonavitCredits">
 		<div class="form-group col-xs-12 col-md-4 padding-dekstop-col info-cofi hidden">
 			<label for="valorInmueble">Valor del inmueble</label>
 			<input type="tel" class="form-control validate input-infonavit" id="valorInmueble" placeholder="">
@@ -740,7 +768,6 @@ function NumeroALetras(num) {
 			<span id="yearsError" class="input-error"></span>
 		</div>
 	</div>
-</form>
   `
 
   const adquisicion_mejora_liquidez_apoyo_infonavitForm = `
@@ -1038,7 +1065,7 @@ function NumeroALetras(num) {
                 <p class="list-title">Aforo Banco</p>
                 <span class="list-item">${a.aforo}%</span>
                 <p class="list-title">Aforo Banco + Infonavit</p>
-                <span class="list-item">${a.aforo}%</span>
+                <span class="list-item">${a.aforo_banco_infonavit}%</span>
                 <p class="list-title">Gastos de Originación</p>
                 <span class="list-item">$ ${formatCurrencyOfNumber(a.gastos_originacion)}</span>
                 <p class="list-title">Gastos Notariales</p>
@@ -1105,7 +1132,7 @@ function NumeroALetras(num) {
                 <p class="list-title">Aforo Banco</p>
                 <span class="list-item">${b.aforo}%</span>
                 <p class="list-title">Aforo Banco + Infonavit</p>
-                <span class="list-item">${b.aforo}%</span>
+                <span class="list-item">${b.aforo_banco_infonavit}%</span>
                 <p class="list-title">Gastos de Originación</p>
                 <span class="list-item">$ ${formatCurrencyOfNumber(b.gastos_originacion)}</span>
                 <p class="list-title">Gastos Notariales</p>
@@ -1172,7 +1199,7 @@ function NumeroALetras(num) {
                 <p class="list-title">Aforo Banco</p>
                 <span class="list-item">${c.aforo}%</span>
                 <p class="list-title">Aforo Banco + Infonavit</p>
-                <span class="list-item">${c.aforo}%</span>
+                <span class="list-item">${c.aforo_banco_infonavit}%</span>
                 <p class="list-title">Gastos de Originación</p>
                 <span class="list-item">$ ${formatCurrencyOfNumber(c.gastos_originacion)}</span>
                 <p class="list-title">Gastos Notariales</p>
