@@ -855,17 +855,28 @@ body {
   .floating-icon {
     position: fixed;
     z-index: 2100; }
-  span.open-menu i {
+  span.open-menu .btn {
     color: #42b2cc;
-    right: -9px;
     position: absolute;
-    padding: 5px;
-    box-shadow: 0 2px 3px #e8e8e8;
-    z-index: 1032;
+    right: 0px;
+    top: 70px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding: 10px 4px;
+    box-shadow: 0 2px 3px #e8e8e8; }
+  .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: none; }
+  span.open-menu .btn i {
+    font-size: 18px;
     -moz-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     -ms--transform: rotate(90deg);
     transform: rotate(90deg); }
+  .nav-expanded span.open-menu .btn i {
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -ms--transform: rotate(270deg);
+    transform: rotate(270deg); }
   .icon-item {
     box-shadow: 0 2px 3px #e8e8e8;
     border-radius: 5px;
