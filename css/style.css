@@ -236,9 +236,12 @@ body.nav-expanded {
   margin: 0.1em 1.7em -0.1em 0;
   transition: all 0.2s ease-in-out; }
 
-.main-menu li > span.icon img {
+.main-menu li a > span.icon img {
   height: 25px;
   padding-right: 15px; }
+
+.open-menu .btn {
+  display: none; }
 
 a:hover .icon-item {
   border: 1px solid #42b2cc; }
@@ -299,7 +302,7 @@ label.icon-label span {
 input[type=checkbox] {
   visibility: hidden; }
 
-input[type=radio] {
+input[type=radio], input[type=file] {
   display: none; }
 
 input:checked + label div {
@@ -675,6 +678,9 @@ a[aria-expanded="false"] + span {
     color: #42b2cc; }
   .verify-list .fa-times-circle {
     color: #ea5455; }
+  .verify-list span {
+    float: right;
+    color: #2C82BE; }
 
 .table > thead > tr > th {
   vertical-align: bottom;
@@ -802,6 +808,20 @@ body {
   font-size: 2em;
   color: #42b2cc; }
 
+.profile-pic {
+  height: 80px;
+  position: absolute;
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 0 !important;
+  top: -50px;
+  left: 35%; }
+
+#photo-label {
+  position: absolute;
+  right: 30px;
+  top: -2px; }
+
 /* importamos responsive al final */
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width: 801px) {
@@ -904,7 +924,7 @@ body {
     padding-right: 15px; }
   .sidebar-header-logo {
     padding-top: 15px;
-    padding-bottom: 30px; }
+    padding-bottom: 20px; }
   .main-menu li {
     margin-left: 0;
     font-size: 14px;
@@ -930,21 +950,40 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  .main-menu li a {
+  .main-menu li a span.menu-text {
     display: none; }
   .nav-btn-back {
     display: none; }
-  span.icon {
-    display: block;
-    text-align: right; }
+  span.icon img {
+    display: inline-block;
+    text-align: center; }
   .nav-expanded .sidebar-header {
     text-align: center; }
-  .nav-expanded .main-menu li a {
+  .nav-expanded .main-menu li a span.menu-text {
     display: block; }
   .nav-expanded span.icon {
     text-align: center; }
   .nav-expanded span.icon img {
     padding: 0 !important; }
+  .nav-expanded .main-menu li a > span.icon img {
+    float: none; }
+  .nav-expanded span.icon img {
+    display: inline-block;
+    text-align: center; }
+  .nav-expanded span.icon {
+    text-align: center; }
+  .nav-expanded span.icon img {
+    padding: 0 !important; }
+  .main-menu li a > span.icon {
+    width: 100%;
+    display: inline-block;
+    transition: all 0.2s ease-in-out; }
+  .main-menu li a > span.icon img {
+    float: right;
+    height: 25px;
+    padding-right: 15px; }
+  .open-menu .btn {
+    display: block; }
   body.nav-expanded .mobile-wrapper {
     display: none; }
   .title-section {

@@ -6,7 +6,7 @@
 	<meta name="description" content="bx+ using webpack and bootstrap">
 	<meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1, maximum-scale=1">
 
-	<title>BX+ - Home</title>
+	<title>BX+ - Analíticas</title>
 
 	<!-- Disable tap highlight on IE -->
 	<meta name="msapplication-tap-highlight" content="no">
@@ -126,155 +126,121 @@
 		</div>
 		<!-- /.container-fluid -->
 	</div>
-	<div class="container home">
-    <div class="row">
-
-      <div class="menu_credit_type col-xs-12 col-md-6">
-        <h3 class="section-header-home">NUEVA SOLICITUD</h3>
-        <div class="col-xs-3">
-					<a href="simulador.html">
-	          <div class="icon-item">
-								<img src="img/icons/house.png" alt="">
-	          </div>
-					</a>
-          <p class="credit-text">Hipoteca</p>
-        </div>
-        <div class="col-xs-3">
-					<a href="simulador.html">
-	          <div class="icon-item">
-								<img src="img/icons/car.png" alt="">
-	          </div>
-					</a>
-          <p class="credit-text">Auto</p>
-        </div>
-        <div class="col-xs-3">
-					<a href="simulador.html">
-	          <div class="icon-item">
-								<img src="img/icons/personal_credit.png" alt="">
-	          </div>
-					</a>
-          <p class="credit-text">Personal</p>
-        </div>
-        <div class="col-xs-3">
-					<a href="simulador.html">
-	          <div class="icon-item">
-								<img src="img/icons/pyme.png" alt="">
-	          </div>
-					</a>
-          <p class="credit-text">PyME</p>
-        </div>
-      </div>
-
-      <div class="col-xs-12 col-md-6">
-        <h3 class="section-header-home">CONSULTA DE ESTATUS</h3>
-        <div class="form-group padding-dekstop-col">
-          <label for="folio_usuario">Folio de usuario</label>
-          <input type="tel" class="form-control validate" id="folio_usuario">
-          <span class="input-success"></span>
-          <span class="input-error"></span>
-        </div>
-        <div>
-          <a href="estatus.html" class="btn btn-form nav-btn">Ingresar</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="row chart-row">
-			<div class="col-xs-12 col-md-6">
-				<div class="panel panel-border section-panel">
-					<div class="panel-heading">
-            VOLUMEN <a href="#">Ver más</a>
-          </div>
-					<div class="panel-body">
-						<canvas id="lineChart2" height="150"></canvas>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-md-6">
-				<div class="panel panel-border section-panel">
-          <div class="panel-heading">
-            VOLUMEN <a href="#">Ver más</a>
-          </div>
-					<div class="panel-body">
-						<canvas id="lineChart" height="150"></canvas>
-					</div>
-				</div>
-			</div>
-    </div>
+	<div id="analiticas-solicitud" class="container">
 
 		<div class="row">
-			<div class="col-xs-12">
 
-				<div class="panel panel-border section-panel">
-					<div class="panel-heading">
-						Solicitudes <a href="solicitudes.html">Ver todas</a>
-					</div>
-					<div class="panel-body table-responsive">
-						<table class="table table-striped">
-							<thead>
-								<tr>
-									<th>Folio</th>
-									<th>Cliente</th>
-									<th>Estatus</th>
-									<th>POV</th>
-									<th>Fuente</th>
-									<th>Producto</th>
-									<th>Fecha</th>
-									<th>Monto</th>
-									<th></th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>0021</td>
-									<td>Mariana Flores Romero</td>
-									<td>En proceso</td>
-									<td>Cuajimalpa</td>
-									<td>Google</td>
-									<td>CS</td>
-									<td>01/07/2017</td>
-									<td>$20,000</td>
-									<td><a href="detalles.html">Ver detalle</a></td>
-								</tr>
-								<tr>
-									<td>0021</td>
-									<td>Mariana Flores Romero</td>
-									<td>En proceso</td>
-									<td>Cuajimalpa</td>
-									<td>Google</td>
-									<td>CS</td>
-									<td>01/07/2017</td>
-									<td>$20,000</td>
-									<td><a href="detalles.html">Ver detalle</a></td>
-								</tr>
-								<tr>
-									<td>0021</td>
-									<td>Mariana Flores Romero</td>
-									<td>En proceso</td>
-									<td>Cuajimalpa</td>
-									<td>Google</td>
-									<td>CS</td>
-									<td>01/07/2017</td>
-									<td>$20,000</td>
-									<td><a href="detalles.html">Ver detalle</a></td>
-								</tr>
-								<tr>
-									<td>0021</td>
-									<td>Mariana Flores Romero</td>
-									<td>En proceso</td>
-									<td>Cuajimalpa</td>
-									<td>Google</td>
-									<td>CS</td>
-									<td>01/07/2017</td>
-									<td>$20,000</td>
-									<td><a href="detalles.html">Ver detalle</a></td>
-								</tr>
-							</tbody>
-						</table>
+
+			<div class="col-xs-12">
+				<h3 class="section-header-home">
+					ANALÍTICAS
+				</h3>
+
+			</div>
+			<div class="col-xs-12 scrollmenu">
+				<a href="#estadisticas">Estadísticas</a>
+				<a href="#producto">Analíticas Producto</a>
+				<a href="#indices">Índices</a>
+				<a href="#eficiencia">Eficiencia</a>
+			</div>
+    </div>
+
+		<div id="estadisticas" class="row">
+			<div class="col-xs-12 col-md-12">
+				<h3 class="section-header">GRÁFICA</h3>
+			</div>
+			<div class="col-xs-12 col-md-12">
+        <div class="panel panel-border section-panel">
+					<div class="panel-body">
+						<canvas id="grafica" height="100"></canvas>
 					</div>
 				</div>
 			</div>
 		</div>
+
+
+
+
+
+
+
+		<div id="producto">
+			<div class="row">
+
+				<div class="col-xs-12 col-md-6">
+					<h3 id="capacidad" class="section-header">Estatus</h3>
+					<div class="panel panel-border section-panel">
+						<div class="panel-body">
+							<canvas id="estatus" height="150"></canvas>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h3 class="section-header">Productos</h3>
+					<div class="panel panel-border section-panel">
+						<div class="panel-body">
+							<canvas id="producto-chart" height="150"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<h3 class="section-header">Puntos de Venta</h3>
+					<div class="panel panel-border section-panel">
+						<div class="panel-body">
+							<canvas id="puntos_venta" height="150"></canvas>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h3 class="section-header">Origen</h3>
+					<div class="panel panel-border section-panel">
+						<div class="panel-body">
+							<canvas id="origen" height="150"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 col-md-4">
+				<h3  id="documentacion" class="section-header">% DE CONVERSIÓN</h3>
+
+				<p class="verify-list">SATELITE<span>23<span></p>
+				<p class="verify-list">COYOACÁN de domicilio<span>46<span></p>
+				<p class="verify-list">CENTRO<span>16<span></p>
+				<p class="verify-list">ROMA<span>14<span></p>
+				<p class="verify-list">CONDESA<span>45<span></p>
+				<p class="verify-list">POLANCO<span>11<span></p>
+
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<h3  id="documentacion" class="section-header">VOL DE TRANSACCIONES</h3>
+
+				<p class="verify-list">SATELITE<span>23<span></p>
+				<p class="verify-list">COYOACÁN de domicilio<span>46<span></p>
+				<p class="verify-list">CENTRO<span>16<span></p>
+				<p class="verify-list">ROMA<span>14<span></p>
+				<p class="verify-list">CONDESA<span>45<span></p>
+				<p class="verify-list">POLANCO<span>11<span></p>
+
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<h3  id="documentacion" class="section-header">MEDIANA DE TIEMPO</h3>
+
+				<p class="verify-list">SATELITE<span>23<span></p>
+				<p class="verify-list">COYOACÁN de domicilio<span>46<span></p>
+				<p class="verify-list">CENTRO<span>16<span></p>
+				<p class="verify-list">ROMA<span>14<span></p>
+				<p class="verify-list">CONDESA<span>45<span></p>
+				<p class="verify-list">POLANCO<span>11<span></p>
+
+			</div>
+		</div>
+
+
 	</div>
 
 	<div class="footer">
@@ -320,8 +286,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/es.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
 
-  <script src="js/index.js"></script>
-	<script src="js/home.js"></script>
+	<script src="js/index.js"></script>
+  <script src="js/analiticas.js"></script>
 
 
 </body>

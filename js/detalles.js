@@ -195,6 +195,9 @@ var docsLinks = document.querySelectorAll('.doc-link')
 
 docsLinks.forEach(link => link.addEventListener('click', function(e){
   e.preventDefault()
-  console.log(link, link.href);
-  PDFObject.embed(link.href, pdfPreview)
+  var options = {
+   fallbackLink: "<p>Tu navegador no soporta ver el documento inline, puedes descargarlo <a href='[url]'>EN ESTE ENLACE</a></p>"
+  };
+  window.scrollTo(0,document.body.scrollHeight);
+  PDFObject.embed(link.href, pdfPreview, options)
 }))
