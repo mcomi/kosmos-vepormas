@@ -822,6 +822,9 @@ body {
   right: 30px;
   top: -2px; }
 
+.modal {
+  margin: 0 auto; }
+
 /* importamos responsive al final */
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width: 801px) {

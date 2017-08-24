@@ -484,11 +484,33 @@
 				</div>
 				<div class="center padding-btns">
 
-					<buttton href="# padding-btns" class="btn btn-form btns-section btn-grey">Solicitar complemento</button>
+					<buttton class="btn btn-form btns-section btn-grey" data-toggle="modal" data-target=".modal-sm">Solicitar complemento</button>
 				</div>
 				<div class="center padding-btns">
 
-					<buttton href="#" class="btn btn-form btns-section btn-red-outline">Rechazar</button>
+					<buttton class="btn btn-form btns-section btn-red-outline">Rechazar</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="modal fade modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+					<div class="modal-dialog modal-sm" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title">Solicita complemento</h4>
+							</div>
+							<div class="modal-body">
+								<p>Anote el complemento que requiere</p>
+								<textarea name="complemento" id="complemento" rows="3" class="form-control"></textarea>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Enviar</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div>
 				</div>
 			</div>
 		</div>
