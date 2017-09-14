@@ -568,7 +568,9 @@ a[aria-expanded="false"] + span {
   margin: 20px auto; }
 
 .swiper-wrapper {
-  height: 1200px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   overflow-x: scroll;
   overflow-y: hidden;
   -ms-overflow-style: none;
