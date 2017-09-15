@@ -424,6 +424,9 @@ a:hover {
   -webkit-appearance: none;
   text-decoration: none; }
 
+.panel-heading a:focus, .panel-heading a:hover {
+  color: #333; }
+
 a:focus .doc-info,
 a:hover .doc-info {
   border: 1px solid #42b2cc; }
@@ -684,6 +687,9 @@ a[aria-expanded="false"] + span {
     float: right;
     color: #2C82BE; }
 
+.breadcrumb a {
+  color: #333; }
+
 .table > thead > tr > th {
   vertical-align: bottom;
   color: #9B9B9B;
@@ -826,6 +832,9 @@ body {
 
 .modal {
   margin: 0 auto; }
+
+.filter-bar {
+  padding-top: 10px; }
 
 /* importamos responsive al final */
 /* tablet, landscape iPad, lo-res laptops ands desktops */

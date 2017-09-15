@@ -1,0 +1,390 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="bx+ using webpack and bootstrap">
+	<meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1, maximum-scale=1">
+
+	<title>BX+ - Configuración</title>
+
+	<!-- Disable tap highlight on IE -->
+	<meta name="msapplication-tap-highlight" content="no">
+
+	<!-- Web Application Manifest -->
+	<link rel="manifest" href="manifest.json">
+
+	<!-- Add to homescreen for Chrome on Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="bx+">
+	<link rel="icon" sizes="192x192" href="/img/chrome-touch-icon-192x192.png">
+
+	<!-- Add to homescreen for Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="bx+">
+	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.1.1/min/dropzone.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="css/bootstrap-table.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+	<!-- Tile icon for Win8 (144x144 + tile color) -->
+	<meta name="msapplication-TileImage" content="/img/ms-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#263238">
+
+	<!-- Color the status bar on mobile devices -->
+	<meta name="theme-color" content="#263238">
+
+</head>
+
+<body>
+	<div class="mobile-wrapper"></div>
+
+	<nav>
+		<span class="open-menu">
+			<button class="btn">
+				<i class="fa fa-sort-up"></i>
+			</button>
+		</span>
+		<div class="sidebar-header">
+			<span class="text-right"><a href="#" id="nav-close">X</a></span>
+			<div class="sidebar-header-logo">
+
+				<img src="img/logo.png" alt="">
+			</div>
+			<div class="sidebar-header-profilepic">
+				<img src="img/profile.jpg" alt="">
+			</div>
+			<p>Hola Laura</p>
+		</div>
+		<ul class="list-unstyled main-menu">
+
+			<!--Include your navigation here-->
+
+			<li><a href="analiticas.html"><span class="icon"><img src="img/icons/analitycs.png" alt=""></span><span class="menu-text">Notificaciones </span></a></li>
+			<li><a href="simulador.html"><span class="icon"><img src="img/icons/solicitud.png" alt=""></span><span class="menu-text">Nueva solicitud </span></a></li>
+			<li><a href="index.html"><span class="icon"><img src="img/icons/004-smartphone.png" alt=""></span><span class="menu-text">Folio de usuario </span></a></li>
+			<li><a href="index.html"><span class="icon"><img src="img/icons/home.svg" alt=""></span><span class="menu-text">Home </span></a></li>
+			<li><a href="analiticas.html"><span class="icon"><img src="img/icons/analitycs.svg" alt=""></span><span class="menu-text">Analíticas </span></a></li>
+			<li><a href="solicitudes.html"><span class="icon"><img src="img/icons/requests.svg" alt=""></span><span class="menu-text">Solicitudes </span></a></li>
+			<li><a href="detalles.html"><span class="icon"><img src="img/icons/verified.svg" alt=""></span><span class="menu-text">Verificaciones </span></a></li>
+			<li><a href="perfil.html"><span class="icon"><img src="img/icons/settings.svg" alt=""></span><span class="menu-text">Configuración </span></a></li>
+		</ul>
+	</nav>
+	<!-- <div class="navbar navbar-inverse navbar-fixed-top">
+
+
+</div> -->
+	<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<!--Include your brand here-->
+
+			<div class="navbar-header">
+
+				<!-- Mobile -->
+				<span id="nav-expander" class="nav-expander fixed">
+	        <img src="img/icons/menu.png" alt="">
+	      </span>
+				<span class="notifications">
+						<img src="img/icons/notification.png" alt="">
+					</span>
+
+			</div>
+			<div class="desktop-nav-links col-md-12">
+				<div class="col-md-8">
+
+					<div class="search">
+
+						<input type="text" class="form-control" placeholder="Buscar">
+					</div>
+
+
+
+
+				</div>
+				<div class="col-md-4">
+					<ul class="nav navbar-nav">
+						<li class="notifications">
+							<img src="img/icons/notification.svg" alt="">
+						</li>
+						<li class="profile">
+							<img src="img/profile.jpg" alt="">
+						</li>
+						<li class="profile-name">Buenas tardes Laura</li>
+					</ul>
+
+				</div>
+			</div>
+
+		</div>
+		<!-- /.container-fluid -->
+	</div>
+	<div class="container home">
+    <div class="row">
+
+
+			<div class="col-xs-12 scrollmenu">
+				<a href="#" data-type="usuarios">Usuarios</a>
+				<a href="#" data-type="solicitud">Solicitud</a>
+				<a href="#" data-type="cotizador">Cotizador</a>
+
+			</div>
+    </div>
+
+		<div id="new-user-modal" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Registro de usuario</h4>
+					</div>
+					<div class="modal-body">
+						<form class="form-horizontal">
+						  <div class="form-group">
+						    <label for="nombre" class="col-sm-4">Nombre(s)</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="nombre">
+								</div>
+						  </div>
+						  <div class="form-group">
+						    <label for="ap-paterno" class="col-sm-4">Apellido paterno</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="ap-paterno">
+								</div>
+						  </div>
+							<div class="form-group">
+						    <label for="ap-materno" class="col-sm-4">Apellido materno</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="ap-materno">
+								</div>
+						  </div>
+							<div class="form-group">
+						    <label for="ap-materno" class="col-sm-4">Nombre de usuario</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="ap-materno">
+								</div>
+						  </div>
+							<div class="form-group">
+						    <label for="contrasenia" class="col-sm-4">Contraseña</label>
+								<div class="col-sm-8">
+									<input type="password" class="form-control" id="contrasenia">
+								</div>
+						  </div>
+							<div class="form-group">
+						    <label for="correo" class="col-sm-4">Correo electrónico</label>
+								<div class="col-sm-8">
+									<input type="email" class="form-control" id="correo">
+								</div>
+						  </div>
+							<div class="form-group">
+								<label for="sucursal" class="col-sm-4">Sucursal</label>
+								<div class="col-sm-8">
+									<select class="form-control">
+									  <option>1</option>
+									  <option>2</option>
+									  <option>3</option>
+									  <option>4</option>
+									  <option>5</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+						    <label for="no-empleado" class="col-sm-4">Número de empleado</label>
+								<div class="col-sm-8">
+									<input type="email" class="form-control" id="no-empleado">
+								</div>
+						  </div>
+							<div class="form-group">
+								<label for="rol" class="col-sm-4">Rol</label>
+								<div class="col-sm-8">
+									<select class="form-control">
+									  <option>ROLE_EJECUTIVO</option>
+									  <option>ROLE_EJECUTIVO</option>
+										<option>ROLE_EJECUTIVO</option>
+										<option>ROLE_EJECUTIVO</option>
+									</select>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+						<button type="button" class="btn btn-form">Guardar</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!-- /.modal -->
+
+		<div class="row">
+      <div class="col-md-12">
+        <div class="filter-bar">
+					<ol class="breadcrumb">
+
+						<li><a href="" data-toggle="modal" data-target="#new-user-modal">Nuevo usuario <i class="fa fa-plus"></i></a></li>
+						<li><a href="">Descargar lista de usuarios <i class="fa fa-download"></i></a></li>
+					</ol>
+
+        </div>
+      </div>
+			<div class="col-md-12">
+
+				<div class="panel panel-border section-panel">
+					<div class="panel-heading">
+						<h4>Usuarios</h4>
+
+					</div>
+					<div class="panel-body table-responsive">
+						<table id="usuarios" class="table table-striped">
+							<thead>
+								<tr>
+									<th>Nombre de usuario</th>
+									<th>Nombre</th>
+									<th>Correo electrónico</th>
+									<th>Rol</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>aaperez</td>
+									<td>Araceli Perez Anguiano</td>
+									<td>correo@ejemplo.com</td>
+									<td>ROLE_EJECUTIVO</td>
+									<td><button data-toggle="modal" data-target="#new-user-modal" class="btn btn-form">Editar <i class="fa fa-edit"></i></button></td>
+								</tr>
+								<tr>
+									<td>aaperez</td>
+									<td>Araceli Perez Anguiano</td>
+									<td>correo@ejemplo.com</td>
+									<td>ROLE_EJECUTIVO</td>
+									<td><button data-toggle="modal" data-target="#new-user-modal" class="btn btn-form">Editar <i class="fa fa-edit"></i></button></td>
+								</tr>
+								<tr>
+									<td>aaperez</td>
+									<td>Araceli Perez Anguiano</td>
+									<td>correo@ejemplo.com</td>
+									<td>ROLE_EJECUTIVO</td>
+									<td><button data-toggle="modal" data-target="#new-user-modal" class="btn btn-form">Editar <i class="fa fa-edit"></i></button></td>
+								</tr>
+								<tr>
+									<td>aaperez</td>
+									<td>Araceli Perez Anguiano</td>
+									<td>correo@ejemplo.com</td>
+									<td>ROLE_EJECUTIVO</td>
+									<td><button data-toggle="modal" data-target="#new-user-modal" class="btn btn-form">Editar <i class="fa fa-edit"></i></button></td>
+								</tr>
+								<tr>
+									<td>aaperez</td>
+									<td>Araceli Perez Anguiano</td>
+									<td>correo@ejemplo.com</td>
+									<td>ROLE_EJECUTIVO</td>
+									<td><button data-toggle="modal" data-target="#new-user-modal" class="btn btn-form">Editar <i class="fa fa-edit"></i></button></td>
+								</tr>
+								<tr>
+									<td>aaperez</td>
+									<td>Araceli Perez Anguiano</td>
+									<td>correo@ejemplo.com</td>
+									<td>ROLE_EJECUTIVO</td>
+									<td><button data-toggle="modal" data-target="#new-user-modal" class="btn btn-form">Editar <i class="fa fa-edit"></i></button></td>
+								</tr>
+								<tr>
+									<td>aaperez</td>
+									<td>Araceli Perez Anguiano</td>
+									<td>correo@ejemplo.com</td>
+									<td>ROLE_EJECUTIVO</td>
+									<td><button data-toggle="modal" data-target="#new-user-modal" class="btn btn-form">Editar <i class="fa fa-edit"></i></button></td>
+								</tr>
+								<tr>
+									<td>aaperez</td>
+									<td>Araceli Perez Anguiano</td>
+									<td>correo@ejemplo.com</td>
+									<td>ROLE_EJECUTIVO</td>
+									<td><button data-toggle="modal" data-target="#new-user-modal" class="btn btn-form">Editar <i class="fa fa-edit"></i></button></td>
+								</tr>
+								<tr>
+									<td>aaperez</td>
+									<td>Araceli Perez Anguiano</td>
+									<td>correo@ejemplo.com</td>
+									<td>ROLE_EJECUTIVO</td>
+									<td><button data-toggle="modal" data-target="#new-user-modal" class="btn btn-form">Editar <i class="fa fa-edit"></i></button></td>
+								</tr>
+							</tbody>
+						</table>
+            <div class="col-md-6 col-md-offset-3 col-xs-12 center">
+              <ul class="pagination">
+                <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+              </ul>
+            </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+
+
+		<div class="icon-menu">
+			<img src="img/icons/house.png" alt="">
+		</div>
+
+
+		<div class="icon-menu">
+			<img src="img/icons/analitycs.png" alt="">
+		</div>
+
+		<div class="icon-menu">
+			<img src="img/icons/new-request.png" alt="">
+		</div>
+
+
+
+		<div class="icon-menu">
+			<img src="img/icons/attach.png" alt="">
+		</div>
+
+
+
+		<div class="icon-menu">
+			<img src="img/icons/checklist.png" alt="">
+		</div>
+	</div>
+
+  <script src="libs/jquery.js"></script>
+  <script src="libs/bootstrap.js"></script>
+  <script src="libs/jquery.navgoco.min.js"></script>
+  <script src="libs/bootstrap-datepicker.min.js"></script>
+  <script src="libs/bootstrap-datepicker.es.min.js"></script>
+  <script src="libs/bootstrap-editable.min.js"></script>
+  <script src="libs/bootstrap-table.min.js"></script>
+  <script src="libs/cleave.min.js"></script>
+  <script src="libs/cleave-phone.mx.js"></script>
+  <script src="libs/swiper.min.js"></script>
+  <script src="libs/dropzone.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/es.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+
+  <script src="js/index.js"></script>
+  <script src="js/solicitudes.js"></script>
+
+</body>
+
+</html>
