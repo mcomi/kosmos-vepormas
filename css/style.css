@@ -389,8 +389,13 @@ select.form-control {
 .date-search {
   margin: 0 20px; }
 
-.check-solicitud {
+.check-solicitud, .check-all {
   visibility: visible !important; }
+
+.checkbox {
+  position: absolute;
+  right: 48px;
+  top: 30px; }
 
 .btn-form {
   color: white;

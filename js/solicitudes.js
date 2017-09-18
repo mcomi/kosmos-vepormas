@@ -38,6 +38,15 @@ checkboxes.each(function() {
     })
 });
 
+const checkAll = $('#check-all');
+checkAll.change(function () {
+  if(this.checked){
+    checkboxes.prop('checked', true);
+  }else{
+    checkboxes.prop('checked', false);
+  }
+})
+
 $('#solicitudes').DataTable({
   "language": {
         "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
