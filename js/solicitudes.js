@@ -2,6 +2,8 @@
 $('#fecha_para').combodate();
 $('#fecha_de').combodate();
 
+$('[data-toggle="tooltip"]').tooltip()
+
 
 $('#date-filter').click(function(e) {
   e.preventDefault()
@@ -21,3 +23,17 @@ solicitudesTipo.forEach(tipo => tipo.addEventListener('click', function(){
   if(title == 'complemento') title = 'Complemento solicitado'
   $('.panel-heading h4').text(title)
 }))
+
+const checkboxes = $('.check-solicitud');
+
+var checkCount = 0
+checkboxes.each(function() {
+    let checkbox = $(this)
+    checkbox.change(function(){
+      if(!this.checked && $('#solicitudes').find(':checkbox:checked').length === 0) {
+        $('#solicitudes-actions').addClass('hidden')
+      }else{
+        $('#solicitudes-actions').removeClass('hidden')
+      }
+    })
+});

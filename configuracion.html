@@ -185,14 +185,91 @@
 								</div>
 						  </div>
 							<div class="form-group">
-								<label for="sucursal" class="col-sm-4">Sucursal</label>
+								<label for="canal" class="col-sm-4">Canal</label>
+								<div class="col-sm-8">
+									<select class="form-control" id="canal">
+										<option value="" selected>...</option>
+									  <option value="1">Sucursal</option>
+									  <option value="2">Asesor Hipotecario</option>
+									  <option value="3">Bróker</option>
+									  <option value="4">Desarrollo</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group hidden" id="brokers">
+								<label for="broker" class="col-sm-4">Bróker</label>
+								<div class="col-sm-8">
+									<select class="form-control" id="broker">
+										<option value="" selected>...</option>
+									  <option value="1">Sinergia Operativa de Crédito (SOC)</option>
+									  <option value="2">Creditaria</option>
+									  <option value="3">Easy Home Services</option>
+									  <option value="4">BJRR Soluciones Hipotecarias</option>
+									  <option>5</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group hidden" id="subbrokers">
+								<label for="subbroker" class="col-sm-4">Subbróker</label>
 								<div class="col-sm-8">
 									<select class="form-control">
-									  <option>1</option>
-									  <option>2</option>
-									  <option>3</option>
-									  <option>4</option>
-									  <option>5</option>
+										<option value="" selected>...</option>
+									  <option value="1">Orbed Inmobiliaria S.A. de C.V.</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="region" class="col-sm-4">Región</label>
+								<div class="col-sm-8">
+									<select class="form-control" id="region">
+										<option value="" selected>...</option>
+									  <option value="1">Bajío</option>
+									  <option value="2">Metropolitana</option>
+									  <option value="3">Noroeste</option>
+									  <option value="4">Occidente</option>
+									  <option value="5">Pacífico</option>
+									  <option value="6">Sur</option>
+									  <option value="7">Sureste</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group hidden" id="estados">
+								<label for="estado" class="col-sm-4">Estado</label>
+								<div class="col-sm-8">
+									<select class="form-control" id="estado" placeholder="">
+										<option value="" selected>...</option>
+										<option value="1">Aguascalientes</option>
+										<option value="2">Baja California</option>
+										<option value="3">Baja California Sur</option>
+										<option value="4">Campeche</option>
+										<option value="5">Coahuila de Zaragoza</option>
+										<option value="6">Colima</option>
+										<option value="7">Chiapas</option>
+										<option value="8">Chihuahua</option>
+										<option value="9">Distrito Federal</option>
+										<option value="10">Durango</option>
+										<option value="11">Guanajuato</option>
+										<option value="12">Guerrero</option>
+										<option value="13">Hidalgo</option>
+										<option value="14">Jalisco</option>
+										<option value="15">México</option>
+										<option value="16">Michoacán de Ocampo</option>
+										<option value="17">Morelos</option>
+										<option value="18">Nayarit</option>
+										<option value="19">Nuevo León</option>
+										<option value="20">Oaxaca</option>
+										<option value="21">Puebla</option>
+										<option value="22">Querétaro</option>
+										<option value="23">Quintana Roo</option>
+										<option value="24">San Luis Potosí</option>
+										<option value="25">Sinaloa</option>
+										<option value="26">Sonora</option>
+										<option value="27">Tabasco</option>
+										<option value="28">Tamaulipas</option>
+										<option value="29">Tlaxcala</option>
+										<option value="30">Veracruz de Ignacio de la Llave</option>
+										<option value="31">Yucatán</option>
+										<option value="32">Zacatecas</option>
 									</select>
 								</div>
 							</div>
@@ -383,7 +460,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
 
   <script src="js/index.js"></script>
-  <script src="js/solicitudes.js"></script>
+  <script src="js/configuracion.js"></script>
 
 </body>
 

@@ -389,6 +389,9 @@ select.form-control {
 .date-search {
   margin: 0 20px; }
 
+.check-solicitud {
+  visibility: visible !important; }
+
 .btn-form {
   color: white;
   background-color: #42b2cc;
