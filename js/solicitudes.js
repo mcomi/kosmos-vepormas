@@ -1,6 +1,10 @@
 
-$('#fecha_para').combodate();
-$('#fecha_de').combodate();
+$('#fecha_para').datepicker({
+    language: "es"
+});
+$('#fecha_de').datepicker({
+    language: "es"
+});
 
 $('[data-toggle="tooltip"]').tooltip()
 
